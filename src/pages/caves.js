@@ -5,16 +5,14 @@ import Layout from '@common/Layout';
 import Navbar from '@common/Navbar';
 
 import Footer from '@sections/Footer';
-import HeaderSmall from '../components/sections/HeaderSmall';
-import Content from '../components/sections/Content';
+import CavesContainer from '../containers/Caves';
 
 const CellarsPage = () => (
   <Layout>
   <Navbar selected="cellars" />
-  <HeaderSmall title="Les caves à bières, pourquoi ?" />
-  <Content/>
-  <Footer />
-</Layout>
+    <CavesContainer/>
+    <Footer />
+  </Layout>
 );
 
 export default CellarsPage;

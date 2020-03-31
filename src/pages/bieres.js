@@ -5,14 +5,14 @@ import Layout from '@common/Layout';
 import Navbar from '@common/Navbar';
 
 import Footer from '@sections/Footer';
-import ContentBeers from '../components/sections/ContentBeers';
-import HeaderSmall from '../components/sections/HeaderSmall';
+import BieresContentContainer from '../containers/BieresContent';
 
 const BeersPage = () => (
   <Layout>
   <Navbar selected="beers" />
-  <HeaderSmall title=" Découvrez des bières d'exceptions" />
-  <ContentBeers/>
+  
+  <BieresContentContainer/>
+
   <Footer />
 </Layout>
 );

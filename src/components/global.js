@@ -22,12 +22,29 @@ export const Container = styled.div`
     max-width: 1200px;
   }
 
+
+
+  div.feature-image {
+    text-align:center;
+    margin-bottom:20px;    
+  }
+  
+
   ${props =>
     props.fluid &&
     `
     max-width: 1200px !important;
   `};
 `;
+
+export const FeatureImage = styled.img`
+  width: 80%;
+
+  @media (min-width: ${props => props.theme.screen.md}) {
+  width: auto;
+  }
+`
+
 
 export const Section = styled.section`
   padding: 38px 0;

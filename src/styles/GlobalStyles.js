@@ -66,6 +66,10 @@ const GlobalStyles = createGlobalStyle`
   a {
     cursor: pointer;
   }
+
+  .kg-image-card {
+    text-align:center;
+  }
 `;
 
 export default GlobalStyles;
