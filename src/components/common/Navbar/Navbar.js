@@ -19,7 +19,7 @@ import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 const NAV_ITEMS = [
   {name:'Accueil',link:'/',slug:'home'},
   {name:'Équipe',link:'/equipe',slug:'team'},
-  {name:'Caves',link:'/#',slug:'cellar'},
+  {name:'Caves',link:'/caves',slug:'cellars'},
   {name:'Bieres',link:'/bieres',slug:'beers'},
   {name:'Articles',link:'/articles',slug:'articles'},
   {name:'FAQ',link:'/#'}]

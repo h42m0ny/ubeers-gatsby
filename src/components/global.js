@@ -30,7 +30,7 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-  padding: 128px 0;
+  padding: 38px 0;
   overflow: hidden;
 
 
