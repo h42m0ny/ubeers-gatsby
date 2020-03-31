@@ -18,14 +18,6 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `team`,
-        path: `${__dirname}/src/images/team`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
