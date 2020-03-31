@@ -1,5 +1,5 @@
 {
-  "name": "UBeers - Cellar Beers Website",
+  "name": "ubeers-gatsby",
   "private": true,
   "description": "A simple cellar beers website make with Gatsby and others tools",
   "version": "0.0.1",
@@ -37,5 +37,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/TonyCois/ubeers-gatsby"
-  },
+  }
 }
