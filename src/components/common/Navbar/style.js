@@ -50,6 +50,10 @@ export const NavItem = styled.li`
     color: ${props => props.theme.color.black.regular};
   }
 
+  a.selected {
+    opacity:1;
+  }
+
   &.active {
     a {
       opacity: 1;

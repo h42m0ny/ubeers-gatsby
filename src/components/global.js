@@ -33,9 +33,16 @@ export const Section = styled.section`
   padding: 128px 0;
   overflow: hidden;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
-    padding: 96px 0;
-  }
+
+
+ 
+
+  ${props => 
+    props.content &&
+      `
+      padding:50px 0;
+      `
+    }
 
   ${props =>
     props.accent &&

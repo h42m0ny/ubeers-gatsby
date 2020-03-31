@@ -9,7 +9,7 @@ import Footer from '@sections/Footer';
 
 const IndexPage = () => (
   <Layout>
-    <Navbar />
+    <Navbar selected="home"/>
     <Header />
     <About />
     <Footer />

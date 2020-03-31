@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 
 import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
@@ -95,12 +93,6 @@ const Copyright = styled.div`
   }
 `;
 
-const Art = styled.figure`
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-top: 48px;
-`;
 
 const StyledContainer = styled(Container)`
   display: flex;
