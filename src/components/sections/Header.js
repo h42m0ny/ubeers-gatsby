@@ -31,9 +31,9 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Prenez soins
+                Organisez votre
                 <br />
-                de vos bières
+                cave à bières
                 <br />
                 avec UBeers
                 
