@@ -48,8 +48,17 @@ Ce qui devrait nous donner cela:
 
 ![Image](/static/images/caves.png)
 
+## Etape 1-4
+
+Désormais, nous allons créer des pages à la volée pour chaque article. Pour cela, il faut modifier le `gatsby-node` en utilisant la méthode `createPage`.
+
 Pour vous aider, n'hésitez pas à consulter la documentation de Gatsby.
 
 ## Et après ?
 
+<<<<<<< HEAD
 Il est temps d'aller plus loin en créant les pages de chaque article à la volée. Vous pouvez aller en step-1-4.
+=======
+Nous avons fini d'importer des données depuis Ghost. Nous allons passer à Strapi.Vous pouvez aller en step-2-1.
+
+> > > > > > > change readme
