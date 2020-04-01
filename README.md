@@ -23,4 +23,4 @@ Pour vous aider, n'hésitez pas à consulter la documentation de Gatsby.
 
 ## Et après ? 
 
-Il est temps d'aller plus loin en créant des pages à la volée, en l'occurence pour nous articles. Vous pouvez aller en step-1-3.
+Nous allons compléter la page "Articles". Vous pouvez aller en step-1-3.
