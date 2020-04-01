@@ -10,17 +10,13 @@
 
 Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CESI en Avril 2020.
 
-## Etape 1-3
+## Etape 1-4
 
-Désormais, nous pouvons aussi compléter la page "Article" afin de récupérer la liste de tous les articles présent sur Ghost.
-
-Ce qui devrait nous donner cela: 
-
-![Image](/static/images/caves.png)
+Désormais, nous allons créer des pages à la volée pour chaque article. Pour cela, il faut modifier le `gatsby-node` en utilisant la méthode `createPage`. 
 
 
 Pour vous aider, n'hésitez pas à consulter la documentation de Gatsby.
 
 ## Et après ? 
 
-Il est temps d'aller plus loin en créant les pages de chaque article à la volée. Vous pouvez aller en step-1-4.
+Nous avons fini d'importer des données depuis Ghost. Nous allons passer à Strapi.Vous pouvez aller en step-2-1.
