@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-source-ghost`,
       options: {
-          apiUrl: `http://localhost:2368`,
-          contentApiKey: `e583b6cebad2f81527804d2890`,
+          apiUrl: `http://localhost:2369`,
+          contentApiKey: `2842c8bf95bfce733b0777f981`,
           version: `v3` // Ghost API version, optional, defaults to "v3".
                         // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
       }
