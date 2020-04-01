@@ -12,11 +12,12 @@ Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CE
 
 ## Etape 1-2
 
-Maintenant que nous avons nos données de Ghost utilsiable via le GraphQL, nous allons pouvoir adapter les pages `caves`,`equipe`,et `biere` pour récupérer le contenu correspondant à la page que l'on souhaite. 
+Maintenant que nous avons nos données de Ghost utilisable via GraphQL, nous allons pouvoir adapter les pages `caves`,`equipe`,et `biere` pour récupérer le contenu correspondant à la page que l'on souhaite. 
 
-Ce qui devrait nous donner cela : 
+Ce qui devrait nous donner cela: 
 
-![Image](/static/images/graphiql.png)
+![Image](/static/images/caves.png)
+
 
 Pour vous aider, n'hésitez pas à consulter la documentation de Gatsby.
 
