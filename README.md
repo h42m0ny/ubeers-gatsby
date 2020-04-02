@@ -36,6 +36,7 @@ Après avoir configuré la source, vous devriez voir dans votre GraphiQL, les do
 
 ## Etape 2-1
 
+<<<<<<< HEAD
 Amusez vous à faire des requêtes dessus pour prendre en main les données.
 
 ## Et après ?
@@ -54,20 +55,38 @@ Ce qui devrait nous donner cela:
 
 Désormais, nous allons créer des pages à la volée pour chaque article. Pour cela, il faut modifier le `gatsby-node` en utilisant la méthode `createPage`.
 
-<<<<<<< HEAD
 Pour vous aider, n'hésitez pas à consulter la documentation de Gatsby.
 
 ## Et après ?
 
-<<<<<<< HEAD
 Il est temps d'aller plus loin en créant les pages de chaque article à la volée. Vous pouvez aller en step-1-4.
-=======
+
 Nous avons fini d'importer des données depuis Ghost. Nous allons passer à Strapi.Vous pouvez aller en step-2-1.
 
-> > > > > > > # change readme
+Désormais nous allons construire la partie `bières` avec les données présent sur Strapi.
+
+Pour avoir des données plus cohérente, j'ai scrapé le site des [bières bretonnes](bieresbretonnes.fr/) avec Puppeteer.
+
+Dans un premier temps, il faut retoucher aux modèles. Voici les modèles et leurs relations :
+
+![Image](/public/images/categories.png)
+![Image](/public/images/brew.png)
+![Image](/public/images/beers.png)
+![Image](/public/images/relation_beers_brew.png)
+![Image](/public/images/relation_beers_cat.png)
+
+Ensuite, il faut charger les données. Vous retrouverez les données en JSON dans le dossier `static/data/ubeers.json`.
+
+Vous avez également un dump Mongo présent dans `/data/dump/`. Faites attention, j'ai du changé le nom de la base en local en `bzh-beers` et changé le paramètre dans `database.json` dans Strapi.
+
+A noter que dans la partie `static/images/`, vous retrouverez aussi l'ensemble des images des bières et logos des brasseries.
 
 ## Et après ?
 
 Vous pouvez aller en step-2-2.
 
-> > > > > > > add articles content
+Vous devriez avoir cela pour la recherche de la brasserie "Lancelot" :
+
+![Image](/static/images/lancelot.png)
+
+Vous pouvez aller en step-2-2.
