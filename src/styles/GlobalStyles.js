@@ -69,6 +69,11 @@ const GlobalStyles = createGlobalStyle`
 
   .kg-image-card {
     text-align:center;
+    
+  }
+
+  .kg-image {
+    max-width:70%;
   }
 `;
 
