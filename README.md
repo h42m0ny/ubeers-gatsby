@@ -69,11 +69,11 @@ Pour avoir des données plus cohérente, j'ai scrapé le site des [bières breto
 
 Dans un premier temps, il faut retoucher aux modèles. Voici les modèles et leurs relations :
 
-![Image](/public/images/categories.png)
-![Image](/public/images/brew.png)
-![Image](/public/images/beers.png)
-![Image](/public/images/relation_beers_brew.png)
-![Image](/public/images/relation_beers_cat.png)
+![Image](/static/images/categories.png)
+![Image](/static/images/brew.png)
+![Image](/static/images/beers.png)
+![Image](/static/images/relation_beers_brew.png)
+![Image](/static/images/relation_beers_cat.png)
 
 Ensuite, il faut charger les données. Vous retrouverez les données en JSON dans le dossier `static/data/ubeers.json`.
 
