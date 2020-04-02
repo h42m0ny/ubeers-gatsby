@@ -16,7 +16,7 @@ Désormais, nous pouvons aussi compléter la page "Article" afin de récupérer 
 
 Ce qui devrait nous donner cela: 
 
-![Image](/static/images/caves.png)
+![Image](/static/images/articles.png)
 
 
 Pour vous aider, n'hésitez pas à consulter la documentation de Gatsby.
