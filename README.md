@@ -34,6 +34,8 @@ Après avoir configuré la source, vous devriez voir dans votre GraphiQL, les do
 
 ![Image](/static/images/graphiql.png)
 
+## Etape 2-1
+
 Amusez vous à faire des requêtes dessus pour prendre en main les données.
 
 ## Et après ?
@@ -52,6 +54,7 @@ Ce qui devrait nous donner cela:
 
 Désormais, nous allons créer des pages à la volée pour chaque article. Pour cela, il faut modifier le `gatsby-node` en utilisant la méthode `createPage`.
 
+<<<<<<< HEAD
 Pour vous aider, n'hésitez pas à consulter la documentation de Gatsby.
 
 ## Et après ?
@@ -61,4 +64,10 @@ Il est temps d'aller plus loin en créant les pages de chaque article à la vol�
 =======
 Nous avons fini d'importer des données depuis Ghost. Nous allons passer à Strapi.Vous pouvez aller en step-2-1.
 
-> > > > > > > change readme
+> > > > > > > # change readme
+
+## Et après ?
+
+Vous pouvez aller en step-2-2.
+
+> > > > > > > add articles content

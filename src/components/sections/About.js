@@ -46,7 +46,7 @@ const About = () => (
     render={data => (
       <Section id="about">
         <Container>
-          <Grid>
+          <Grid key>
             <div>
               <h2>Construisez votre cave à bière</h2>
               <p>

@@ -42,6 +42,7 @@ export const FeatureImage = styled.img`
 
   @media (min-width: ${props => props.theme.screen.md}) {
   width: auto;
+  max-width: 800px;
   }
 `
 
