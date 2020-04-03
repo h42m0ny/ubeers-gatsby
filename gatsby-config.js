@@ -57,7 +57,16 @@ module.exports = {
           '@static': path.resolve(__dirname, 'static/'),
         },
       },
-    }
+    },
+    {
+      resolve: `gatsby-source-ghost`,
+      options: {
+          apiUrl: `http://localhost:2368/`,
+          contentApiKey: `1f9d6a6879c98bd4c956cf5f19`,
+          version: `v3` // Ghost API version, optional, defaults to "v3".
+                        // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
+      }
+   }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
