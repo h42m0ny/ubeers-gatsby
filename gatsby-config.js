@@ -26,9 +26,17 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-strapi`,
+      options: {
+      apiURL: `http://localhost:1337`,
+      queryLimit: 10000, // Default to 100
+      contentTypes: [`beers`, `breweries`,`categories`],
+      },
+    },
+    {
       resolve: `gatsby-source-ghost`,
       options: {
-          apiUrl: `http://localhost:2369`,
+          apiUrl: `http://localhost:2368`,
           contentApiKey: `2842c8bf95bfce733b0777f981`,
           version: `v3` // Ghost API version, optional, defaults to "v3".
                         // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
