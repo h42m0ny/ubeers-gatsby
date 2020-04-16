@@ -10,6 +10,7 @@
 
 Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CESI en Avril 2020.
 
+<<<<<<< HEAD
 ### Objectif
 
 ![Image](/static/images/demo.png)
@@ -58,6 +59,8 @@ Désormais, nous allons créer des pages à la volée pour chaque article. Pour 
 Pour vous aider, n'hésitez pas à consulter la documentation de Gatsby.
 
 ## Et après ?
+=======
+## Etape 2-3
 
 Il est temps d'aller plus loin en créant les pages de chaque article à la volée. Vous pouvez aller en step-1-4.
 
@@ -103,9 +106,13 @@ A noter que dans la partie `static/images/`, vous retrouverez aussi l'ensemble d
 
 Il faut relier les données de strapi à gatsby. Pour ce faire, il existe un plugin source "gatsby-source-strapi" qui faut installer de la même manière que pour celui de Ghost, à savoir dans le `gatsby-config.js`.
 
+<<<<<<< HEAD
 Vous devriez avoir cela pour la recherche de la brasserie "Lancelot" :
 
 ![Image](/static/images/lancelot.png)
 ep-2-2.
 =======
 Vous pouvez aller en step-2-3.
+=======
+
+Vous pouvez aller en step-2-4.
