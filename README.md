@@ -10,22 +10,10 @@
 
 Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CESI en Avril 2020.
 
-## Etape 2-7
+## Etape 2-8
 
-L'objectif de cette étape est de créer deux nouvelles pages :
+Bravo ! Vous êtes à la fin du projet... enfin presque :)
 
-- `Brasseries` qui reprendra un listing des brasseries existantes à la manière des bières
+Maintenant, il faut déployer l'ensemble de la JAM.
 
-- `brewery` qui affichera des informations sur une brasserie à l'image de `beer`. On affichera aussi les bières présente dans cette brasserie en faisant des liens vers celles-ci.
-
-Voici une capture d'écran de la page `Brasseries` :
-
-![Image](/static/images/breweries-list.png)
-
-Voici une capture d'écran de la page `brewery` :
-
-![Image](/static/images/brewery.png)
-
-## Et après ?
-
-Vous pouvez aller en step-2-8.
+Pour cela rendez-vous sur le repository `ubeers-deploy`.

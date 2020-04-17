@@ -1,0 +1,1283 @@
+{
+  "redirects": [],
+  "pages": [
+    {
+      "path": "/articles/la-biere-pression-vous-livre-ses-secrets"
+    },
+    {
+      "path": "/articles/kombucha-bieres-carton"
+    },
+    {
+      "path": "/articles/corona-biere-virus"
+    },
+    {
+      "path": "/articles/beertender-perfectdraft-choisir"
+    },
+    {
+      "path": "/articles/binouze-usa-interview"
+    },
+    {
+      "path": "/articles/climate-change-biere"
+    },
+    {
+      "path": "/articles/2020-biere-tendances"
+    },
+    {
+      "path": "/bieres/brittanys-hoppy-pale-ale"
+    },
+    {
+      "path": "/bieres/dimezell-london-porter"
+    },
+    {
+      "path": "/bieres/en-pleine-tempete"
+    },
+    {
+      "path": "/bieres/aerofab-blizzard"
+    },
+    {
+      "path": "/bieres/la-fauve"
+    },
+    {
+      "path": "/bieres/bk-climat"
+    },
+    {
+      "path": "/bieres/vieux-singe-saison-au-houblon-frais"
+    },
+    {
+      "path": "/bieres/penn-kalet-intrepide"
+    },
+    {
+      "path": "/bieres/athanor-thats-not-a-mistake-ipa"
+    },
+    {
+      "path": "/bieres/storlok-heart-saoul-double-rye-ipa"
+    },
+    {
+      "path": "/bieres/aerofab-mistral"
+    },
+    {
+      "path": "/bieres/brittanys-season-harvest-ale"
+    },
+    {
+      "path": "/bieres/arvarus-export-stout"
+    },
+    {
+      "path": "/bieres/la-saccade"
+    },
+    {
+      "path": "/bieres/rennes-world-megateuf"
+    },
+    {
+      "path": "/bieres/sainte-colombe-baltic-porter"
+    },
+    {
+      "path": "/bieres/brest-winter-19"
+    },
+    {
+      "path": "/bieres/kalon"
+    },
+    {
+      "path": "/bieres/dremmwel-au-ble-noir-gwiniz-du"
+    },
+    {
+      "path": "/bieres/yvette-orniere"
+    },
+    {
+      "path": "/bieres/namnet-boudzan"
+    },
+    {
+      "path": "/bieres/uncle-ipa"
+    },
+    {
+      "path": "/bieres/white-the-fuck"
+    },
+    {
+      "path": "/bieres/la-duzme"
+    },
+    {
+      "path": "/bieres/aerofab-alize"
+    },
+    {
+      "path": "/bieres/la-bagarre"
+    },
+    {
+      "path": "/bieres/eau-qui-dort"
+    },
+    {
+      "path": "/bieres/storlok-india-pale-ale"
+    },
+    {
+      "path": "/bieres/beg-douar"
+    },
+    {
+      "path": "/bieres/athanor-smash"
+    },
+    {
+      "path": "/bieres/tri-cycle"
+    },
+    {
+      "path": "/bieres/la-bilig"
+    },
+    {
+      "path": "/bieres/guernouillette-halloween-2017"
+    },
+    {
+      "path": "/bieres/la-braise"
+    },
+    {
+      "path": "/bieres/storlok-black-monday"
+    },
+    {
+      "path": "/bieres/arvarus-imperial-dark-saison"
+    },
+    {
+      "path": "/bieres/penn-kalet-insolente"
+    },
+    {
+      "path": "/bieres/arvarus-witbier"
+    },
+    {
+      "path": "/bieres/paumell-ruee-vers-lhop"
+    },
+    {
+      "path": "/bieres/guernouillette-ipa-imperiale"
+    },
+    {
+      "path": "/bieres/la-tsunami-oyster-stout"
+    },
+    {
+      "path": "/bieres/jungle-rhino-wheat-ipa"
+    },
+    {
+      "path": "/bieres/la-white-spirit"
+    },
+    {
+      "path": "/bieres/la-betise"
+    },
+    {
+      "path": "/bieres/storlok-the-japanese-dream"
+    },
+    {
+      "path": "/bieres/chainon-manquant"
+    },
+    {
+      "path": "/bieres/entre-2-ombres-american-amber-ale"
+    },
+    {
+      "path": "/bieres/uncle-smokehaus"
+    },
+    {
+      "path": "/bieres/arvarus-pale-ale"
+    },
+    {
+      "path": "/bieres/storlok-pale-ale"
+    },
+    {
+      "path": "/bieres/brune-type-bock"
+    },
+    {
+      "path": "/bieres/paulette-blonde-pils-americaine-classique"
+    },
+    {
+      "path": "/bieres/uncle-new-zealand-ale"
+    },
+    {
+      "path": "/bieres/grr-bohemian-pilsen"
+    },
+    {
+      "path": "/bieres/arvarus-red-ale"
+    },
+    {
+      "path": "/bieres/athanor-oeuvre-au-rouge-golden-ipa"
+    },
+    {
+      "path": "/bieres/sainte-colombe-biere-framboise"
+    },
+    {
+      "path": "/bieres/monstrueuse-normalite"
+    },
+    {
+      "path": "/bieres/storlok-endless-summer"
+    },
+    {
+      "path": "/bieres/aldeta"
+    },
+    {
+      "path": "/bieres/azacca-session-pale-ale"
+    },
+    {
+      "path": "/bieres/athanor-oeuvre-au-blanc-witbier"
+    },
+    {
+      "path": "/bieres/nouveau-monde"
+    },
+    {
+      "path": "/bieres/penn-kalet-la-sauvage"
+    },
+    {
+      "path": "/bieres/uncle-neipa"
+    },
+    {
+      "path": "/bieres/namnet-black-bernak"
+    },
+    {
+      "path": "/bieres/guernouillette-de-mars"
+    },
+    {
+      "path": "/bieres/penn-kalet-effrontee"
+    },
+    {
+      "path": "/bieres/ambree-du-bouffay"
+    },
+    {
+      "path": "/bieres/aerofab-noreaster"
+    },
+    {
+      "path": "/bieres/sant-erwann-triple"
+    },
+    {
+      "path": "/bieres/paumell-double-ipa"
+    },
+    {
+      "path": "/bieres/mignonne-red-rye-ipa"
+    },
+    {
+      "path": "/bieres/follette-ambree"
+    },
+    {
+      "path": "/bieres/jean-gol-potier"
+    },
+    {
+      "path": "/bieres/namblanche"
+    },
+    {
+      "path": "/bieres/kerpiton-ambree"
+    },
+    {
+      "path": "/bieres/uncle-session-ipa"
+    },
+    {
+      "path": "/bieres/terenez-diwan-biere-ambree"
+    },
+    {
+      "path": "/bieres/coreff-breizile"
+    },
+    {
+      "path": "/bieres/storlok-amber-ale"
+    },
+    {
+      "path": "/bieres/la-49-3"
+    },
+    {
+      "path": "/bieres/sobacha"
+    },
+    {
+      "path": "/bieres/storlok-session-ipa"
+    },
+    {
+      "path": "/bieres/tricerathops-warrior"
+    },
+    {
+      "path": "/bieres/baca-blanche"
+    },
+    {
+      "path": "/bieres/mariolite-stout-au-miel"
+    },
+    {
+      "path": "/bieres/terenez-biere-au-miel"
+    },
+    {
+      "path": "/bieres/sainte-colombe-brassin-unique-neipa"
+    },
+    {
+      "path": "/bieres/mallozh-ruz"
+    },
+    {
+      "path": "/bieres/athanor-oeuvre-au-noir-foreign-extra-stout"
+    },
+    {
+      "path": "/bieres/la-bringue"
+    },
+    {
+      "path": "/bieres/psy-k-tri"
+    },
+    {
+      "path": "/bieres/biere-au-sureau-de-ploemeur"
+    },
+    {
+      "path": "/bieres/souffle-tropical"
+    },
+    {
+      "path": "/bieres/penn-kalet-la-rebelle"
+    },
+    {
+      "path": "/bieres/iconic-planwour-ale"
+    },
+    {
+      "path": "/bieres/nathanor"
+    },
+    {
+      "path": "/bieres/namnet-hoppy-hour"
+    },
+    {
+      "path": "/bieres/damruz"
+    },
+    {
+      "path": "/bieres/tonys-beer-2017"
+    },
+    {
+      "path": "/bieres/sister-cities"
+    },
+    {
+      "path": "/bieres/east-side-pale-ale"
+    },
+    {
+      "path": "/bieres/skumenn-blouson-noir"
+    },
+    {
+      "path": "/bieres/gueuza"
+    },
+    {
+      "path": "/bieres/biometri"
+    },
+    {
+      "path": "/bieres/mor-braz-blanche"
+    },
+    {
+      "path": "/bieres/kurun-porter"
+    },
+    {
+      "path": "/bieres/trompe-souris-noire"
+    },
+    {
+      "path": "/bieres/tomm-a-ra"
+    },
+    {
+      "path": "/bieres/porter"
+    },
+    {
+      "path": "/bieres/palsambleu"
+    },
+    {
+      "path": "/bieres/athanor-blonde"
+    },
+    {
+      "path": "/bieres/black-duck"
+    },
+    {
+      "path": "/bieres/skumenn-rye-india-pale-ale"
+    },
+    {
+      "path": "/bieres/ginger-pale-ale"
+    },
+    {
+      "path": "/bieres/stout-toujours"
+    },
+    {
+      "path": "/bieres/coreff-dramm-hud"
+    },
+    {
+      "path": "/bieres/les-vagabondes-chocolate-porter"
+    },
+    {
+      "path": "/bieres/mignonne-noel-funky-dirty-chicken"
+    },
+    {
+      "path": "/bieres/gwin-zegal"
+    },
+    {
+      "path": "/bieres/sainte-colombe-hiver"
+    },
+    {
+      "path": "/bieres/piratri"
+    },
+    {
+      "path": "/bieres/ar-men-doree"
+    },
+    {
+      "path": "/bieres/trompe-souris-aie-aie-aie"
+    },
+    {
+      "path": "/bieres/mor-braz-ambree"
+    },
+    {
+      "path": "/bieres/paumell-american-pale-ale"
+    },
+    {
+      "path": "/bieres/bosco-ipa"
+    },
+    {
+      "path": "/bieres/hop-shuttle"
+    },
+    {
+      "path": "/bieres/najkar"
+    },
+    {
+      "path": "/bieres/it-is-what-it-is"
+    },
+    {
+      "path": "/bieres/sant-erwann-whisky"
+    },
+    {
+      "path": "/bieres/piwo-grodziskie-blanche-fumee"
+    },
+    {
+      "path": "/bieres/bisou-caillou"
+    },
+    {
+      "path": "/bieres/bosco-blonde"
+    },
+    {
+      "path": "/bieres/embardee-blanche"
+    },
+    {
+      "path": "/bieres/captain-baril-ipa"
+    },
+    {
+      "path": "/bieres/embardee-blonde-ipa"
+    },
+    {
+      "path": "/bieres/teles"
+    },
+    {
+      "path": "/bieres/entre-2-ombres-black-ipa"
+    },
+    {
+      "path": "/bieres/blaz-an-amzer-n8-best-bitter"
+    },
+    {
+      "path": "/bieres/stout-aux-huitres-du-morbihan"
+    },
+    {
+      "path": "/bieres/mignonne-foreign-extra-stout"
+    },
+    {
+      "path": "/bieres/mignonne-old-ale"
+    },
+    {
+      "path": "/bieres/embardee-blonde"
+    },
+    {
+      "path": "/bieres/uncle-tagarin-ale"
+    },
+    {
+      "path": "/bieres/blanche-du-bouffay"
+    },
+    {
+      "path": "/bieres/fresk"
+    },
+    {
+      "path": "/bieres/pylone"
+    },
+    {
+      "path": "/bieres/tricerathops-mandarina-bavaria"
+    },
+    {
+      "path": "/bieres/skumenn-wheat-india-pale-ale"
+    },
+    {
+      "path": "/bieres/ti-chope-la-brune"
+    },
+    {
+      "path": "/bieres/blonde-du-bouffay"
+    },
+    {
+      "path": "/bieres/sainte-colombe-20e-anniversaire"
+    },
+    {
+      "path": "/bieres/sant-erwann-de-noel"
+    },
+    {
+      "path": "/bieres/terenez-blanche"
+    },
+    {
+      "path": "/bieres/sainte-colombe-doree"
+    },
+    {
+      "path": "/bieres/gamme-56"
+    },
+    {
+      "path": "/bieres/philomenn-blanche"
+    },
+    {
+      "path": "/bieres/guernouillette-rousse-pure-malt"
+    },
+    {
+      "path": "/bieres/dremmwel-doree-bio"
+    },
+    {
+      "path": "/bieres/claque-ta-cuisse"
+    },
+    {
+      "path": "/bieres/delhi-delhi"
+    },
+    {
+      "path": "/bieres/tricerathops-columbus"
+    },
+    {
+      "path": "/bieres/mutine-ambree"
+    },
+    {
+      "path": "/bieres/la-kervignacoise"
+    },
+    {
+      "path": "/bieres/bosco-ambree"
+    },
+    {
+      "path": "/bieres/bagad-bro-felger"
+    },
+    {
+      "path": "/bieres/tonys-beer-2016"
+    },
+    {
+      "path": "/bieres/baril-white"
+    },
+    {
+      "path": "/bieres/tri-martolod-blanche"
+    },
+    {
+      "path": "/bieres/skumenn-amber-ale"
+    },
+    {
+      "path": "/bieres/la-flemme"
+    },
+    {
+      "path": "/bieres/vieille-tour-brune"
+    },
+    {
+      "path": "/bieres/breizh-beach-lager"
+    },
+    {
+      "path": "/bieres/coreff-ambree-bio"
+    },
+    {
+      "path": "/bieres/skumenn-pale-ale"
+    },
+    {
+      "path": "/bieres/blanche-hermine-ipa"
+    },
+    {
+      "path": "/bieres/coreff-ipa"
+    },
+    {
+      "path": "/bieres/tricerathops-crystal"
+    },
+    {
+      "path": "/bieres/terenez-de-noel"
+    },
+    {
+      "path": "/bieres/blaz-an-amzer-n6-lager"
+    },
+    {
+      "path": "/bieres/mignonne-india-pale-ale"
+    },
+    {
+      "path": "/bieres/san-roce-biere-de-saison"
+    },
+    {
+      "path": "/bieres/blaz-an-amzer-n5-biere-noire"
+    },
+    {
+      "path": "/bieres/camber"
+    },
+    {
+      "path": "/bieres/roch-brown-ale"
+    },
+    {
+      "path": "/bieres/lancelot-grand-cru"
+    },
+    {
+      "path": "/bieres/hells-beer"
+    },
+    {
+      "path": "/bieres/san-roce-brune"
+    },
+    {
+      "path": "/bieres/brigantine-blanche-bio"
+    },
+    {
+      "path": "/bieres/duchesse-anne-automne"
+    },
+    {
+      "path": "/bieres/chonchon"
+    },
+    {
+      "path": "/bieres/blaz-an-amzer-n7-winter-warmer-christmas-ale"
+    },
+    {
+      "path": "/bieres/riboul"
+    },
+    {
+      "path": "/bieres/kerzu-imperial-stout"
+    },
+    {
+      "path": "/bieres/sainte-colombe-ambree"
+    },
+    {
+      "path": "/bieres/je-me-souviens-ipa-2015"
+    },
+    {
+      "path": "/bieres/cervoise-lancelot"
+    },
+    {
+      "path": "/bieres/tri-martolod-brune"
+    },
+    {
+      "path": "/bieres/nuit-de-lombre"
+    },
+    {
+      "path": "/bieres/baril-originale"
+    },
+    {
+      "path": "/bieres/ouessane-biere-aux-algues"
+    },
+    {
+      "path": "/bieres/coreff-brune"
+    },
+    {
+      "path": "/bieres/tantad"
+    },
+    {
+      "path": "/bieres/paumell-triple"
+    },
+    {
+      "path": "/bieres/telenn-du"
+    },
+    {
+      "path": "/bieres/scottish-dance"
+    },
+    {
+      "path": "/bieres/nevermine-blanche-ipa"
+    },
+    {
+      "path": "/bieres/terenez-brune"
+    },
+    {
+      "path": "/bieres/nevermine-blanche"
+    },
+    {
+      "path": "/bieres/pilote-en-mousse"
+    },
+    {
+      "path": "/bieres/sainte-colombe-brassin-unique-2015"
+    },
+    {
+      "path": "/bieres/la-trouille"
+    },
+    {
+      "path": "/bieres/la-bordee-ambree"
+    },
+    {
+      "path": "/bieres/ribin"
+    },
+    {
+      "path": "/bieres/fleur-des-iles"
+    },
+    {
+      "path": "/bieres/tricerathops-amarillo"
+    },
+    {
+      "path": "/bieres/tonys-beer"
+    },
+    {
+      "path": "/bieres/tri-martolod-blonde"
+    },
+    {
+      "path": "/bieres/blaz-an-amzer-n3-blonde-triple"
+    },
+    {
+      "path": "/bieres/hini-du"
+    },
+    {
+      "path": "/bieres/tourne-vice"
+    },
+    {
+      "path": "/bieres/paumell-ambree-ale"
+    },
+    {
+      "path": "/bieres/gwennig"
+    },
+    {
+      "path": "/bieres/nuit-rousse"
+    },
+    {
+      "path": "/bieres/cest-brasse-pres-de-chez-ipa"
+    },
+    {
+      "path": "/bieres/drao-blonde-boogie-woogie"
+    },
+    {
+      "path": "/bieres/boom-apa"
+    },
+    {
+      "path": "/bieres/ipa-je-me-souviens-2014"
+    },
+    {
+      "path": "/bieres/blaz-amzer-n4-black-ipa"
+    },
+    {
+      "path": "/bieres/drao-printemps-flamenco"
+    },
+    {
+      "path": "/bieres/hopnose"
+    },
+    {
+      "path": "/bieres/paumell-noel"
+    },
+    {
+      "path": "/bieres/chant-des-sirenes-anthemuse"
+    },
+    {
+      "path": "/bieres/drao-brune"
+    },
+    {
+      "path": "/bieres/dremmwel-stout-bio"
+    },
+    {
+      "path": "/bieres/britt-rosee"
+    },
+    {
+      "path": "/bieres/rince-monseigneur"
+    },
+    {
+      "path": "/bieres/sainte-colombe-blanche"
+    },
+    {
+      "path": "/bieres/operation-houblon-durci-biere-collaborative"
+    },
+    {
+      "path": "/bieres/britt-blonde"
+    },
+    {
+      "path": "/bieres/biere-bonnets-rouges"
+    },
+    {
+      "path": "/bieres/biere-griffonne-blanche"
+    },
+    {
+      "path": "/bieres/biere-celtika-cranberry"
+    },
+    {
+      "path": "/bieres/saoul-capot"
+    },
+    {
+      "path": "/bieres/saint-georges-stout-2014"
+    },
+    {
+      "path": "/bieres/paumell-porter"
+    },
+    {
+      "path": "/bieres/celtika"
+    },
+    {
+      "path": "/bieres/sant-erwann-ipa"
+    },
+    {
+      "path": "/bieres/mutine-blanche"
+    },
+    {
+      "path": "/bieres/paumell-blonde-ale"
+    },
+    {
+      "path": "/bieres/slash"
+    },
+    {
+      "path": "/bieres/duchesse-anne-de-noel"
+    },
+    {
+      "path": "/bieres/guernouillette-de-noel-2014"
+    },
+    {
+      "path": "/bieres/saint-georges-ambree-facon-scotch-ale-2014"
+    },
+    {
+      "path": "/bieres/starmine"
+    },
+    {
+      "path": "/bieres/terenez-blonde"
+    },
+    {
+      "path": "/bieres/bordee-blanche"
+    },
+    {
+      "path": "/bieres/melen-rosko-pale-ale"
+    },
+    {
+      "path": "/bieres/saint-georges-ambree-scotch-ale-2013"
+    },
+    {
+      "path": "/bieres/bordee-brune"
+    },
+    {
+      "path": "/bieres/pete-culasse"
+    },
+    {
+      "path": "/bieres/bordee-blonde"
+    },
+    {
+      "path": "/bieres/blaz-an-amzer-n2"
+    },
+    {
+      "path": "/bieres/tri-martolod-fumee"
+    },
+    {
+      "path": "/bieres/bielle-de-jour"
+    },
+    {
+      "path": "/bieres/blondinette"
+    },
+    {
+      "path": "/bieres/xi-i-samhain"
+    },
+    {
+      "path": "/bieres/duchesse-anne-triple-hops"
+    },
+    {
+      "path": "/bieres/terenez-triple"
+    },
+    {
+      "path": "/bieres/drao-ambree"
+    },
+    {
+      "path": "/bieres/lancelot-blonde"
+    },
+    {
+      "path": "/bieres/mutine-blonde"
+    },
+    {
+      "path": "/bieres/oezett"
+    },
+    {
+      "path": "/bieres/britt-do-brasil"
+    },
+    {
+      "path": "/bieres/sainte-colombe-blonde-triple-brassin-unique-2014"
+    },
+    {
+      "path": "/bieres/tartarins-top-tipple"
+    },
+    {
+      "path": "/bieres/philomenn-spoum"
+    },
+    {
+      "path": "/bieres/philomenn-tourbee"
+    },
+    {
+      "path": "/bieres/filaj"
+    },
+    {
+      "path": "/bieres/guernouillette-brune-aux-epices-des-antilles"
+    },
+    {
+      "path": "/bieres/ombre-bleue"
+    },
+    {
+      "path": "/bieres/guernouillette-biere-de-mars"
+    },
+    {
+      "path": "/bieres/philomenn-stout"
+    },
+    {
+      "path": "/bieres/biere-fleur-de-sureau"
+    },
+    {
+      "path": "/bieres/saint-georges-rousse"
+    },
+    {
+      "path": "/bieres/philomenn-spoum-des-talus"
+    },
+    {
+      "path": "/bieres/tricerathops"
+    },
+    {
+      "path": "/bieres/orson-ale"
+    },
+    {
+      "path": "/bieres/rosko-ambree"
+    },
+    {
+      "path": "/bieres/diwall-blonde"
+    },
+    {
+      "path": "/bieres/philomenn-rousse"
+    },
+    {
+      "path": "/bieres/griffone-blonde"
+    },
+    {
+      "path": "/bieres/sainte-colombe-ale-belge"
+    },
+    {
+      "path": "/bieres/stronggus"
+    },
+    {
+      "path": "/bieres/sainte-colombe-de-noel"
+    },
+    {
+      "path": "/bieres/tri-martolod-rousse"
+    },
+    {
+      "path": "/bieres/saint-georges-brune-porter"
+    },
+    {
+      "path": "/bieres/guernouillette-de-noel-2013"
+    },
+    {
+      "path": "/bieres/coreff-de-noel-bio"
+    },
+    {
+      "path": "/bieres/sainte-colombe-grand-cru-barley-wine"
+    },
+    {
+      "path": "/bieres/ombre-jaune"
+    },
+    {
+      "path": "/bieres/guernouillette-stout-imperial-russe"
+    },
+    {
+      "path": "/bieres/saint-georges-blonde"
+    },
+    {
+      "path": "/bieres/triple-aux-4-cereales"
+    },
+    {
+      "path": "/bieres/blonde-au-safran"
+    },
+    {
+      "path": "/bieres/saint-georges-blanche-edition-estivale"
+    },
+    {
+      "path": "/bieres/guernouillette-ambree-aux-algues-bretonnes"
+    },
+    {
+      "path": "/bieres/chat-malo-ambree"
+    },
+    {
+      "path": "/bieres/sainte-colombe-stout-imperiale-cuvee-2012"
+    },
+    {
+      "path": "/bieres/dremmwel-stout"
+    },
+    {
+      "path": "/bieres/ambree-triple-pur-malt"
+    },
+    {
+      "path": "/bieres/rousse-pur-malt"
+    },
+    {
+      "path": "/bieres/rosko-eost-du"
+    },
+    {
+      "path": "/bieres/blonde-de-froment"
+    },
+    {
+      "path": "/bieres/rosko-stout"
+    },
+    {
+      "path": "/bieres/la-tricoise"
+    },
+    {
+      "path": "/bieres/old-stoat"
+    },
+    {
+      "path": "/bieres/trompe-souris-rose"
+    },
+    {
+      "path": "/bieres/sainte-colombe-blonde"
+    },
+    {
+      "path": "/bieres/ombre-blanche"
+    },
+    {
+      "path": "/bieres/lauganaise-blonde"
+    },
+    {
+      "path": "/bieres/lauganaise-triple"
+    },
+    {
+      "path": "/bieres/coreff-aeroport-nann"
+    },
+    {
+      "path": "/bieres/bretonne-pie-noire"
+    },
+    {
+      "path": "/bieres/la-biere-des-scopains"
+    },
+    {
+      "path": "/bieres/aour-du"
+    },
+    {
+      "path": "/bieres/philomenn-blonde"
+    },
+    {
+      "path": "/bieres/melig-la-biere-des-ours"
+    },
+    {
+      "path": "/bieres/melmor-biere-chouchen"
+    },
+    {
+      "path": "/bieres/coreff-ambree"
+    },
+    {
+      "path": "/bieres/penhors-blonde-bio"
+    },
+    {
+      "path": "/bieres/duchesse-anne-triple"
+    },
+    {
+      "path": "/bieres/coreff-de-noel"
+    },
+    {
+      "path": "/bieres/bogue-dor"
+    },
+    {
+      "path": "/bieres/morgane-bio"
+    },
+    {
+      "path": "/bieres/nedeleg-laouen"
+    },
+    {
+      "path": "/bieres/penhors-ambree"
+    },
+    {
+      "path": "/bieres/suroit-blanche"
+    },
+    {
+      "path": "/bieres/blanche-hermine"
+    },
+    {
+      "path": "/bieres/britt-blanche"
+    },
+    {
+      "path": "/bieres/sant-erwann"
+    },
+    {
+      "path": "/brasseries/brasserie-dimezell"
+    },
+    {
+      "path": "/brasseries/brasserie-vieux-singe"
+    },
+    {
+      "path": "/brasseries/brasserie-aerofab"
+    },
+    {
+      "path": "/brasseries/brasserie-oblique"
+    },
+    {
+      "path": "/brasseries/brasserie-kerampont"
+    },
+    {
+      "path": "/brasseries/brasserie-la-tete-dure"
+    },
+    {
+      "path": "/brasseries/brasserie-athanor"
+    },
+    {
+      "path": "/brasseries/brasserie-de-cornouaille"
+    },
+    {
+      "path": "/brasseries/brasserie-brittanys"
+    },
+    {
+      "path": "/brasseries/brasserie-arvarus"
+    },
+    {
+      "path": "/brasseries/brasserie-sainte-colombe"
+    },
+    {
+      "path": "/brasseries/brasserie-de-trevarn"
+    },
+    {
+      "path": "/brasseries/brasserie-coreff"
+    },
+    {
+      "path": "/brasseries/brasserie-bretagne-britt"
+    },
+    {
+      "path": "/brasseries/brasserie-imprimerie"
+    },
+    {
+      "path": "/brasseries/brasserie-le-ponceau-namnet-beer"
+    },
+    {
+      "path": "/brasseries/brasserie-uncle"
+    },
+    {
+      "path": "/brasseries/brasserie-nautile"
+    },
+    {
+      "path": "/brasseries/brasserie-da-bep-lech-toutes-directions"
+    },
+    {
+      "path": "/brasseries/brasserie-la-dilettante"
+    },
+    {
+      "path": "/brasseries/brasserie-tri-martolod-concarneau"
+    },
+    {
+      "path": "/brasseries/brasserie-la-guernouillette"
+    },
+    {
+      "path": "/brasseries/brasserie-du-bouffay"
+    },
+    {
+      "path": "/brasseries/brasserie-paumell"
+    },
+    {
+      "path": "/brasseries/brasserie-lurbaine"
+    },
+    {
+      "path": "/brasseries/brasserie-du-baril"
+    },
+    {
+      "path": "/brasseries/brasserie-skumenn"
+    },
+    {
+      "path": "/brasseries/brasserie-ombre"
+    },
+    {
+      "path": "/brasseries/brasserie-les-bieres-du-cercle"
+    },
+    {
+      "path": "/brasseries/brasserie-belle-cour-paulette"
+    },
+    {
+      "path": "/brasseries/brasserie-emeraude"
+    },
+    {
+      "path": "/brasseries/brasserie-follette"
+    },
+    {
+      "path": "/brasseries/brasserie-kerpiton"
+    },
+    {
+      "path": "/brasseries/brasserie-du-bout-du-monde"
+    },
+    {
+      "path": "/brasseries/brasserie-baca"
+    },
+    {
+      "path": "/brasseries/brasserie-la-ferme-de-yel"
+    },
+    {
+      "path": "/brasseries/brasserie-an-alarch"
+    },
+    {
+      "path": "/brasseries/brasserie-du-moissonneur"
+    },
+    {
+      "path": "/brasseries/brasserie-montreuil-sur-ille"
+    },
+    {
+      "path": "/brasseries/brasserie-mor-braz"
+    },
+    {
+      "path": "/brasseries/brasserie-de-la-divatte"
+    },
+    {
+      "path": "/brasseries/brasserie-du-tonnelier"
+    },
+    {
+      "path": "/brasseries/brasserie-duck"
+    },
+    {
+      "path": "/brasseries/brasserie-bosco"
+    },
+    {
+      "path": "/brasseries/brasserie-lembardee"
+    },
+    {
+      "path": "/brasseries/brasserie-distribilh"
+    },
+    {
+      "path": "/brasseries/brasserie-ti-chope"
+    },
+    {
+      "path": "/brasseries/la-belle-joie"
+    },
+    {
+      "path": "/brasseries/brasserie-touken-philomenn"
+    },
+    {
+      "path": "/brasseries/brasserie-des-abers"
+    },
+    {
+      "path": "/brasseries/brasserie-lancelot"
+    },
+    {
+      "path": "/brasseries/brasserie-san-roce"
+    },
+    {
+      "path": "/brasseries/brasserie-la-bambelle"
+    },
+    {
+      "path": "/brasseries/cest-brasse-pres-de-chez-vous"
+    },
+    {
+      "path": "/brasseries/brasserie-de-la-cote-de-jade"
+    },
+    {
+      "path": "/brasseries/ferme-brasserie-drao"
+    },
+    {
+      "path": "/brasseries/brasserie-bordee"
+    },
+    {
+      "path": "/brasseries/grobulfactory"
+    },
+    {
+      "path": "/brasseries/brasserie-keravale"
+    },
+    {
+      "path": "/brasseries/brasserie-launay"
+    },
+    {
+      "path": "/brasseries/brasserie-saint-georges"
+    },
+    {
+      "path": "/brasseries/les-bieres-de-charlotte"
+    },
+    {
+      "path": "/brasseries/brasserie-les-fous"
+    },
+    {
+      "path": "/brasseries/distillerie-warenghem"
+    },
+    {
+      "path": "/brasseries/gaec-les-radicaux-libres"
+    },
+    {
+      "path": "/brasseries/brasserie-champ-commun-auganaise"
+    },
+    {
+      "path": "/brasseries/brasserie-penhors"
+    },
+    {
+      "path": "/brasseries/brasserie-la-morgat"
+    },
+    {
+      "path": "/"
+    },
+    {
+      "path": "/404.html"
+    },
+    {
+      "path": "/404"
+    },
+    {
+      "path": "/articles"
+    },
+    {
+      "path": "/bieres"
+    },
+    {
+      "path": "/brasseries"
+    },
+    {
+      "path": "/caves"
+    },
+    {
+      "path": "/equipe"
+    }
+  ]
+}

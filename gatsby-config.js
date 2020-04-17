@@ -48,6 +48,7 @@ module.exports = {
         // Add any options here
       },
     },
+    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -60,6 +61,12 @@ module.exports = {
         theme_color: `#8bd8ed`,
         display: `minimal-ui`,
         icon: `static/favicon.png`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-express",
+      options: {
+        output: "config/gatsby-express.json",
       },
     },
     {
