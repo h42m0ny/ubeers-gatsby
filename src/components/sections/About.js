@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react"
+import styled from "styled-components"
+import { StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-import { Section, Container } from '@components/global';
+import { Section, Container } from "@components/global"
 
 const About = () => (
   <StaticQuery
@@ -46,15 +46,16 @@ const About = () => (
     render={data => (
       <Section id="about">
         <Container>
-          <Grid>
+          <Grid key>
             <div>
               <h2>Construisez votre cave à bière</h2>
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt felis ac euismod semper.
-               Nulla quam lacus, tempor nec purus eget, dapibus semper nunc. 
-               Sed luctus egestas eros quis porttitor. Curabitur ut eros ullamcorper,
-                fringilla mauris ut, gravida est. Fusce ut odio eget metus facilisis mattis.
-                     </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                tincidunt felis ac euismod semper. Nulla quam lacus, tempor nec
+                purus eget, dapibus semper nunc. Sed luctus egestas eros quis
+                porttitor. Curabitur ut eros ullamcorper, fringilla mauris ut,
+                gravida est. Fusce ut odio eget metus facilisis mattis.
+              </p>
             </div>
             <Art>
               <Img fluid={data.art_fast.childImageSharp.fluid} />
@@ -67,10 +68,11 @@ const About = () => (
             <div>
               <h2>Partagez votre avis à la communauté</h2>
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt felis ac euismod semper.
-               Nulla quam lacus, tempor nec purus eget, dapibus semper nunc. 
-               Sed luctus egestas eros quis porttitor. Curabitur ut eros ullamcorper,
-                fringilla mauris ut, gravida est. Fusce ut odio eget metus facilisis mattis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                tincidunt felis ac euismod semper. Nulla quam lacus, tempor nec
+                purus eget, dapibus semper nunc. Sed luctus egestas eros quis
+                porttitor. Curabitur ut eros ullamcorper, fringilla mauris ut,
+                gravida est. Fusce ut odio eget metus facilisis mattis.
               </p>
             </div>
           </Grid>
@@ -78,10 +80,11 @@ const About = () => (
             <div>
               <h2>Partagez une bière à plusieurs </h2>
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt felis ac euismod semper.
-               Nulla quam lacus, tempor nec purus eget, dapibus semper nunc. 
-               Sed luctus egestas eros quis porttitor. Curabitur ut eros ullamcorper,
-                fringilla mauris ut, gravida est. Fusce ut odio eget metus facilisis mattis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                tincidunt felis ac euismod semper. Nulla quam lacus, tempor nec
+                purus eget, dapibus semper nunc. Sed luctus egestas eros quis
+                porttitor. Curabitur ut eros ullamcorper, fringilla mauris ut,
+                gravida est. Fusce ut odio eget metus facilisis mattis.
               </p>
             </div>
             <Art>
@@ -92,7 +95,7 @@ const About = () => (
       </Section>
     )}
   />
-);
+)
 
 const Grid = styled.div`
   display: grid;
@@ -131,12 +134,12 @@ const Grid = styled.div`
         }
     `}
   }
-`;
+`
 
 const Art = styled.figure`
   margin: 0;
   max-width: 380px;
   width: 100%;
-`;
+`
 
-export default About;
+export default About

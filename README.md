@@ -14,10 +14,10 @@ Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CE
 
 ![Image](/static/images/demo.png)
 
-Voici un petit aperçu du site que l’on va construire aujourd’hui assez classique avec différents type de contenu : des pages et articles par `Ghost`, du métier par `Strapi` pour les bières et enfin une partie FAQ pour `Cosmic`.  
+Voici un petit aperçu du site que l’on va construire aujourd’hui assez classique avec différents type de contenu : des pages et articles par `Ghost`, du métier par `Strapi` pour les bières et enfin une partie FAQ pour `Cosmic`.
 
 A noter que le thème du site a été adapté depuis le thème [Absurd](https://github.com/ajayns/gatsby-absurd).
 
-### Par où commencer ? 
+### Par où commencer ?
 
 Rendez-vous en `step-1-1` pour Ghost.

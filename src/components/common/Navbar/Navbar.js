@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Scrollspy from 'react-scrollspy';
+import React, { Component } from "react"
+import Scrollspy from "react-scrollspy"
 
-import { Container } from '@components/global';
+import { Container } from "@components/global"
 import {
   Nav,
   NavItem,
@@ -10,41 +10,42 @@ import {
   NavListWrapper,
   MobileMenu,
   Mobile,
-} from './style';
+} from "./style"
 
-import { Link } from 'gatsby';
+import { Link } from "gatsby"
 
-import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
+import { ReactComponent as MenuIcon } from "@static/icons/menu.svg"
 
 const NAV_ITEMS = [
-  {name:'Accueil',link:'/',slug:'home'},
-  {name:'Équipe',link:'/equipe',slug:'team'},
-  {name:'Caves',link:'/caves',slug:'cellars'},
-  {name:'Bieres',link:'/bieres',slug:'beers'},
-  {name:'Articles',link:'/articles',slug:'articles'},
-  {name:'FAQ',link:'/#'}]
+  { name: "Accueil", link: "/", slug: "home" },
+  { name: "Équipe", link: "/equipe", slug: "team" },
+  { name: "Caves", link: "/caves", slug: "cellars" },
+  { name: "Bieres", link: "/bieres", slug: "beers" },
+  { name: "Brasseries", link: "/brasseries", slug: "breweries" },
+  { name: "Articles", link: "/articles", slug: "articles" },
+  { name: "FAQ", link: "/#" },
+]
 
 class Navbar extends Component {
   state = {
     mobileMenuOpen: false,
-    selected: this.props.selected || null
-  };
+    selected: this.props.selected || null,
+  }
 
   toggleMobileMenu = () => {
-    this.setState(prevState => ({ mobileMenuOpen: !prevState.mobileMenuOpen }));
-  };
+    this.setState(prevState => ({ mobileMenuOpen: !prevState.mobileMenuOpen }))
+  }
 
   closeMobileMenu = () => {
     if (this.state.mobileMenuOpen) {
-      this.setState({ mobileMenuOpen: false });
+      this.setState({ mobileMenuOpen: false })
     }
-  };
+  }
 
   getNavAnchorLink = item => {
-
-    let classSelected = '';
-    if(this.state.selected !== null && item.slug === this.state.selected){
-      classSelected='selected';
+    let classSelected = ""
+    if (this.state.selected !== null && item.slug === this.state.selected) {
+      classSelected = "selected"
     }
 
     return (
@@ -67,17 +68,17 @@ class Navbar extends Component {
         ))}
       </Scrollspy>
     </NavListWrapper>
-  );
+  )
 
   render() {
-    const { mobileMenuOpen } = this.state;
+    const { mobileMenuOpen } = this.state
 
     return (
       <Nav {...this.props}>
         <StyledContainer>
           <Brand>UBeers</Brand>
           <Mobile>
-            <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
+            <button onClick={this.toggleMobileMenu} style={{ color: "black" }}>
               <MenuIcon />
             </button>
           </Mobile>
@@ -92,8 +93,8 @@ class Navbar extends Component {
           )}
         </Mobile>
       </Nav>
-    );
+    )
   }
 }
 
-export default Navbar;
+export default Navbar

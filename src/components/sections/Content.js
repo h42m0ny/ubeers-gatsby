@@ -1,61 +1,19 @@
-import React from 'react';
+import React from "react"
 
-import { Section, Container } from '@components/global';
+import { Section, Container, FeatureImage } from "@components/global"
 
-const Content = () => (
-  
-      <Section content>
-        <Container>
-         
-        <p>
-            Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum 
-            extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae
-            a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto 
-            maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse
-            sed per bella saevissima, nec opibus nec victu nec indumentorum vilitate gregariis
-            militibus discrepantes opposita cuncta superasse virtute.
-        </p>
+const Content = props => (
+  <Section content>
+    <Container>
+      {props.data.feature_image && (
+        <div className="feature-image">
+          <FeatureImage src={props.data.feature_image} alt="" />
+        </div>
+      )}
+      <div dangerouslySetInnerHTML={{ __html: props.data.html }} />
+      {props.children && props.children}
+    </Container>
+  </Section>
+)
 
-        <p>
-            Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum 
-            extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae
-            a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto 
-            maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse
-            sed per bella saevissima, nec opibus nec victu nec indumentorum vilitate gregariis
-            militibus discrepantes opposita cuncta superasse virtute.
-        </p>
-
-        <p>
-            Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum 
-            extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae
-            a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto 
-            maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse
-            sed per bella saevissima, nec opibus nec victu nec indumentorum vilitate gregariis
-            militibus discrepantes opposita cuncta superasse virtute.
-        </p>
-
-        <p>
-            Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum 
-            extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae
-            a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto 
-            maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse
-            sed per bella saevissima, nec opibus nec victu nec indumentorum vilitate gregariis
-            militibus discrepantes opposita cuncta superasse virtute.
-        </p>
-
-        <p>
-            Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum 
-            extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae
-            a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto 
-            maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse
-            sed per bella saevissima, nec opibus nec victu nec indumentorum vilitate gregariis
-            militibus discrepantes opposita cuncta superasse virtute.
-        </p>
-
-                 
-        </Container>
-      </Section>
-);
-
-
-export default Content;
+export default Content

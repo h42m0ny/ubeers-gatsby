@@ -1,15 +1,29 @@
-import React from 'react';
-
-import Layout from '@common/Layout';
-import { Container } from '@components/global';
+import React from "react"
+import Layout from "@common/Layout"
+import Navbar from "@common/Navbar"
+import Footer from "@sections/Footer"
+import HeaderSmall from "../components/sections/HeaderSmall"
+import { Section, Container } from "@components/global"
 
 const NotFoundPage = () => (
   <Layout>
-    <Container>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Container>
+    <Navbar selected="home" />
+    <HeaderSmall title={"Oups... une 404 !"} />
+    <Section>
+      <Container>
+        <p
+          style={{
+            textAlign: "center",
+            fontSize: "120px",
+            marginBottom: "60px",
+          }}
+        >
+          ...
+        </p>
+      </Container>
+    </Section>
+    <Footer />
   </Layout>
-);
+)
 
-export default NotFoundPage;
+export default NotFoundPage

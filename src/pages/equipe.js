@@ -1,20 +1,17 @@
-import React from 'react';
+import React from "react"
 
+import Layout from "@common/Layout"
+import Navbar from "@common/Navbar"
 
-import Layout from '@common/Layout';
-import Navbar from '@common/Navbar';
-
-import Footer from '@sections/Footer';
-import HeaderSmall from '../components/sections/HeaderSmall';
-import Content from '../components/sections/Content';
+import Footer from "@sections/Footer"
+import EquipeContainer from "../containers/Equipe"
 
 const EquipePage = () => (
   <Layout>
-  <Navbar selected="team" />
-  <HeaderSmall title="Qui sommes-nous ?" />
-  <Content/>
-  <Footer />
-</Layout>
-);
+    <Navbar selected="team" />
+    <EquipeContainer />
+    <Footer />
+  </Layout>
+)
 
-export default EquipePage;
+export default EquipePage

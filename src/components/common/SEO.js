@@ -1,16 +1,16 @@
-import React from 'react';
-import Helmet from 'react-helmet';
+import React from "react"
+import Helmet from "react-helmet"
 
 const SEO_DATA = {
-  description: 'UBeers, un outil de gestion de caves à bières',
-  title: 'UBeers',
-  url: '',
-  author: '',
-  keywords: ['gatsby', 'site', 'beers'],
-  img: '',
-  twitterId: '',
-  facebookId: '',
-};
+  description: "UBeers, un outil de gestion de caves à bières",
+  title: "UBeers",
+  url: "",
+  author: "",
+  keywords: ["gatsby", "site", "beers"],
+  img: "",
+  twitterId: "",
+  facebookId: "",
+}
 
 const SEO = () => {
   return (
@@ -31,12 +31,12 @@ const SEO = () => {
       <meta name="twitter:image:src" content={SEO_DATA.img} />
 
       <meta name="description" content={SEO_DATA.description} />
-      <meta name="keywords" content={SEO_DATA.keywords.join(', ')} />
+      <meta name="keywords" content={SEO_DATA.keywords.join(", ")} />
       <meta name="author" content={SEO_DATA.author} />
       <title>{SEO_DATA.title}</title>
       <html lang="en" />
     </Helmet>
-  );
-};
+  )
+}
 
-export default SEO;
+export default SEO
