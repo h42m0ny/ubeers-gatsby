@@ -12,8 +12,12 @@ Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CE
 
 ## Etape 2-3
 
+Désormais que nous avons les données de bières, nous allons pouvoir commencer à modifier notre page `bières` afin de lister les bières présentes dans notre strapi.
+
+Il faut donc modifer les components et la page pour arriver à cette capture d'écran : 
+
+![Image](/static/images/beers-gatsby-list.png)
 
 ## Et après ? 
-
 
 Vous pouvez aller en step-2-4.
