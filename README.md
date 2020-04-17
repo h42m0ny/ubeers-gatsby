@@ -10,6 +10,8 @@
 
 Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CESI en Avril 2020.
 
+<<<<<<< HEAD
+
 ## Etape 2-3
 
 ## Etape 2-2
@@ -36,16 +38,20 @@ L'objectif de cette étape est de créer un nouveau template `beer` pour créer 
 
 ## Etape 2-5
 
-L'objectif de cette étape est de modifier notre page `Bières` pour ajouter des filtres.
+=======
 
-Dans un premier temps, nous allons mettre des boutons pour chaque catégorie de bière. Lorsque l'on cliquera dessus, la liste des bières se mettra à jour.
+## Etape 2-6
 
-Pour se faire, nous allons besoin de gérer des états dans notre component `bieres`. Vous pouvez ainsi soit utiliser une class, soit les hooks.
+> > > > > > > readme
+
+L'objectif de cette étape est de continuer à modifier notre page `Bières` pour ajouter des filtres.
+
+Après avoir ajouter les catégories, nous allons ajouter un champ de recherche qui filtrera la liste des bières.
 
 Voici une capture d'écran de la page bières :
 
-![Image](/static/images/beers-filtrer-category.png)
+![Image](/static/images/beers-search.png)
 
 ## Et après ?
 
-Vous pouvez aller en step-2-6.
+Vous pouvez aller en step-2-7.
