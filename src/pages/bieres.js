@@ -28,6 +28,7 @@ class BeersPage extends React.Component {
     };
 
     this.setBeerFromCategory = this.setBeerFromCategory.bind(this);
+    this.searchBeerFromInput = this.searchBeerFromInput.bind(this);
 
   }
 
@@ -45,6 +46,22 @@ class BeersPage extends React.Component {
     }
   }
 
+  searchBeerFromInput(value){
+    console.log(value)
+    if(value !== undefined && value.length >= 4){
+
+      this.setState({
+        beers:_.filter(this.props.data.allStrapiBeers.nodes,(beer) => beer.name.indexOf(value) !== -1),
+        currentCategory:'Toutes'
+      })
+    }else{
+      this.setState({
+        beers:this.props.data.allStrapiBeers.nodes,
+        currentCategory:'Toutes'
+      })
+    }
+  }
+
   render(){
     return (
       <Layout>
@@ -53,6 +70,10 @@ class BeersPage extends React.Component {
         <Section>
           <Container>
             <div dangerouslySetInnerHTML={{__html: this.state.page.html}}/> 
+            <div>
+                <LabelStyled>Recherche </LabelStyled>
+                <InputStyled type="text" onChange={(e) => this.searchBeerFromInput(e.target.value)} placeholder={this.props.data.allStrapiBeers.nodes[0].name}/>
+            </div>
             <div>
               <ListStyled>    
                 <LiStyled><p>Par type de bières</p></LiStyled>             
@@ -131,6 +152,21 @@ const LinkStyled = styled(Link)`
 const ListStyled = styled.ul`
   padding: 0;
 `
+
+const LabelStyled = styled.label`
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: #564F62;
+`
+
+const InputStyled = styled.input`
+  width: 300px;
+  height: 40px;
+  font-size: 24px;
+  color: #564F62;
+`
+
 
 const FilterCategoryStyled = styled.a`
 
