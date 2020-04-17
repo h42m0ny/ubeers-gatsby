@@ -11,6 +11,7 @@
 Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CESI en Avril 2020.
 
 <<<<<<< HEAD
+
 ### Objectif
 
 ![Image](/static/images/demo.png)
@@ -59,9 +60,12 @@ Désormais, nous allons créer des pages à la volée pour chaque article. Pour 
 Pour vous aider, n'hésitez pas à consulter la documentation de Gatsby.
 
 ## Et après ?
+
 =======
+
 ## Etape 2-3
 
+<<<<<<< HEAD
 Il est temps d'aller plus loin en créant les pages de chaque article à la volée. Vous pouvez aller en step-1-4.
 
 Nous avons fini d'importer des données depuis Ghost. Nous allons passer à Strapi.Vous pouvez aller en step-2-1.
@@ -114,5 +118,13 @@ ep-2-2.
 =======
 Vous pouvez aller en step-2-3.
 =======
+=======
+Désormais que nous avons les données de bières, nous allons pouvoir commencer à modifier notre page `bières` afin de lister les bières présentes dans notre strapi.
+
+Il faut donc modifer les components et la page pour arriver à cette capture d'écran :
+
+![Image](/static/images/beers-gatsby-list.png)
+
+## Et après ?
 
 Vous pouvez aller en step-2-4.
