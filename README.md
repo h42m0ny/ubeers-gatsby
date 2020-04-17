@@ -10,14 +10,18 @@
 
 Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CESI en Avril 2020.
 
-## Etape 2-3
+## Etape 2-4
 
-Désormais que nous avons les données de bières, nous allons pouvoir commencer à modifier notre page `bières` afin de lister les bières présentes dans notre strapi.
+L'objectif de cette étape est de créer un nouveau template `beer` pour créer des pages sur chacune des bières. 
 
-Il faut donc modifer les components et la page pour arriver à cette capture d'écran : 
+À la manière de la page pour chaque article, il faut modifier le `gatsby-node` pour effectuer cette opération. 
 
-![Image](/static/images/beers-gatsby-list.png)
+Par la suite, il faudra modifer notre page des bières pour mettre les liens.
+
+Voici une capture d'écran de la fiche d'une bière : 
+
+![Image](/static/images/beer-fiche.png)
 
 ## Et après ? 
 
-Vous pouvez aller en step-2-4.
+Vous pouvez aller en step-2-5.
