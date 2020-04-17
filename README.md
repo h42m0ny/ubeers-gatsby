@@ -10,18 +10,18 @@
 
 Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CESI en Avril 2020.
 
-## Etape 2-4
+## Etape 2-5
 
-L'objectif de cette étape est de créer un nouveau template `beer` pour créer des pages sur chacune des bières. 
+L'objectif de cette étape est de modifier notre page `Bières` pour ajouter des filtres.
 
-À la manière de la page pour chaque article, il faut modifier le `gatsby-node` pour effectuer cette opération. 
+Dans un premier temps, nous allons mettre des boutons pour chaque catégorie de bière. Lorsque l'on cliquera dessus, la liste des bières se mettra à jour.
 
-Par la suite, il faudra modifer notre page des bières pour mettre les liens.
+Pour se faire, nous allons besoin de gérer des états dans notre component `bieres`. Vous pouvez ainsi soit utiliser une class, soit les hooks.
 
-Voici une capture d'écran de la fiche d'une bière : 
+Voici une capture d'écran de la page bières : 
 
-![Image](/static/images/beer-fiche.png)
+![Image](/static/images/beers-filtrer-category.png)
 
 ## Et après ? 
 
-Vous pouvez aller en step-2-5.
+Vous pouvez aller en step-2-6.
