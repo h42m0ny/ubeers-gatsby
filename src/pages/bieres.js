@@ -14,6 +14,7 @@ import { Section, Container } from '@components/global';
 
 import Footer from '@sections/Footer';
 
+import { Link } from 'gatsby';
 import HeaderSmall from '../components/sections/HeaderSmall';
 
 const BeersPage = ({ data }) => (
@@ -25,11 +26,14 @@ const BeersPage = ({ data }) => (
         <div dangerouslySetInnerHTML={{ __html: data.ghostPage.html }} />
         <Grid>
           {data.allStrapiBeers.nodes.map((beer) => (
-            <div key={beer.id}>
-              <img src={'/images/' + beer.image} width={200} />
-              <p>{beer.name}</p>
-              <p>{beer.category.name}</p>
-            </div>
+            <LinkStyled to={`/bieres/${beer.slug}`}>
+              <div key={beer.id}>
+                <img src={'/images/' + beer.image} width={200} />
+                <p>{beer.name}</p>
+                <p>{beer.category.name}</p>
+              </div>
+            </LinkStyled>
+
 
           ))
           }
@@ -61,6 +65,9 @@ export const query = graphql`
       html
     }
   }
+`
+const LinkStyled = styled(Link)`
+    text-decoration:none;
 `
 
 const Grid = styled.div`
