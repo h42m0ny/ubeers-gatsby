@@ -1,3 +1,7 @@
+const GHOST_URI = process.env.PORT || "http://localhost:2368"
+const GHOST_TOKEN = process.env.PORT || "2842c8bf95bfce733b0777f981"
+const STRAPI_URI = process.env.PORT || "http://localhost:1337"
+
 const path = require("path")
 
 module.exports = {
@@ -28,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: STRAPI_URI,
         queryLimit: 10000, // Default to 100
         contentTypes: [`beers`, `breweries`, `categories`],
       },
@@ -36,8 +40,8 @@ module.exports = {
     {
       resolve: `gatsby-source-ghost`,
       options: {
-        apiUrl: `http://localhost:2368`,
-        contentApiKey: `2842c8bf95bfce733b0777f981`,
+        apiUrl: GHOST_URI,
+        contentApiKey: GHOST_TOKEN,
         version: `v3`, // Ghost API version, optional, defaults to "v3".
         // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
       },
