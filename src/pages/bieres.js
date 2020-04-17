@@ -6,8 +6,6 @@ import {graphql} from 'gatsby';
 import Layout from '@common/Layout';
 import Navbar from '@common/Navbar';
 
-import Content from '../components/sections/Content';
-
 import styled from 'styled-components';
 
 import { Section, Container } from '@components/global';
@@ -16,33 +14,87 @@ import Footer from '@sections/Footer';
 
 import { Link } from 'gatsby';
 import HeaderSmall from '../components/sections/HeaderSmall';
+import _ from 'lodash'
 
-const BeersPage = ({data}) => (
-    <Layout>
-      <Navbar selected="beers" />
-      <HeaderSmall title={data.ghostPage.title} />
-      <Section>
-        <Container>
-          <div dangerouslySetInnerHTML={{__html: data.ghostPage.html}}/> 
-         <Grid>              
-          {data.allStrapiBeers.nodes.map((beer) => (
-                  <LinkStyled to={`/bieres/${beer.slug}`}>
-                  <div key={beer.id}>
-                    <img src={'/images/'+beer.image} width={200}/>
-                    <p>{beer.name}</p>
-                    <p>{beer.category.name}</p>
-                  </div>
-                  </LinkStyled>
-             
-               
-            ))
-          }
-           </Grid>
-        </Container>
-      </Section>
-      <Footer />
-    </Layout>
-  )
+class BeersPage extends React.Component {
+
+  constructor(props){
+    super(props)
+    this.state = { 
+      beers: props.data.allStrapiBeers.nodes,
+      categories:props.data.allStrapiCategories.nodes,
+      currentCategory:'Toutes',
+      page:props.data.ghostPage
+    };
+
+    this.setBeerFromCategory = this.setBeerFromCategory.bind(this);
+
+  }
+
+  setBeerFromCategory(category){
+    if(category.name === undefined){
+      this.setState({
+        beers:this.props.data.allStrapiBeers.nodes,
+        currentCategory:category
+      })
+    }else{
+      this.setState({
+        beers:_.filter(this.props.data.allStrapiBeers.nodes,{category:{name:category.name}}),
+        currentCategory:category.name
+      })
+    }
+  }
+
+  render(){
+    return (
+      <Layout>
+        <Navbar selected="beers" />
+        <HeaderSmall title={this.state.page.title} />
+        <Section>
+          <Container>
+            <div dangerouslySetInnerHTML={{__html: this.state.page.html}}/> 
+            <div>
+              <ListStyled>    
+                <LiStyled><p>Par type de bières</p></LiStyled>             
+                <LiStyled>
+                  <FilterCategoryStyled active={this.state.currentCategory === 'Toutes' ? true : false} onClick={() => this.setBeerFromCategory("Toutes") }>Toutes</FilterCategoryStyled>
+                </LiStyled>             
+                {
+                  this.state.categories.map((category) => (
+                    <LiStyled key={category.id}>
+                      <FilterCategoryStyled 
+                        active={this.state.currentCategory === category.name ? true : false}  
+                        onClick={() => this.setBeerFromCategory(category) }>{category.name}
+                      </FilterCategoryStyled>
+                    </LiStyled>
+                  ))
+                }
+               </ListStyled>
+            </div>
+          
+          <Grid>              
+            {
+              this.state.beers.map((beer) => (
+                <LinkStyled to={`/bieres/${beer.slug}`} key={beer.id}>
+                <div>
+                  <img alt={beer.name} src={'/images/'+beer.image} width={200}/>
+                  <p>{beer.name}</p>
+                  <p>{beer.category.name}</p>
+                </div>
+                </LinkStyled>
+              ))
+            }
+            </Grid>
+          </Container>
+        </Section>
+        <Footer />
+      </Layout>
+
+    )
+  }
+
+}
+
 
 export const query = graphql`
   {
@@ -57,6 +109,13 @@ export const query = graphql`
         }
       }
     },
+    allStrapiCategories {
+      nodes {
+        id
+        name
+        slug
+       }
+    },
 
     ghostPage(slug: {eq: "bieres"}) {
       id
@@ -69,6 +128,29 @@ export const query = graphql`
 const LinkStyled = styled(Link)`
     text-decoration:none;
 `
+const ListStyled = styled.ul`
+  padding: 0;
+`
+
+const FilterCategoryStyled = styled.a`
+
+  background: ${props => props.active ? "#564F62" : "#f3dc3b"};
+  color: ${props => props.active ? "white" : "#564F62"};
+  
+  cursor: pointer;
+  display: block;
+  margin: 0 0 20px 5px;
+  padding: 5px 10px;
+`
+
+const LiStyled = styled.li`
+  display: block;
+  float: left;
+  list-style: none;
+  font-size: 24px;
+  margin-right: 40px;
+`
+
 
 const Grid = styled.div`
   display: grid;
@@ -78,6 +160,7 @@ const Grid = styled.div`
   align-items: center;
   justify-items: center;
   margin: 24px 0;
+  float:left;
 
   h2 {
     margin-bottom: 16px;
