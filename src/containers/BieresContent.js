@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react"
 
-import HeaderSmall from '../components/sections/HeaderSmall';
-import Content from '../components/sections/Content';
+import HeaderSmall from "../components/sections/HeaderSmall"
+import Content from "../components/sections/Content"
 
-import {StaticQuery, graphql} from 'gatsby'
+import { StaticQuery, graphql } from "gatsby"
 
-const BieresContentContainer = (props) => (
+const BieresContentContainer = props => (
   <StaticQuery
     query={graphql`
       {
-        ghostPage(slug: {eq: "bieres"}) {
+        ghostPage(slug: { eq: "bieres" }) {
           id
           title
           feature_image
@@ -18,14 +18,12 @@ const BieresContentContainer = (props) => (
       }
     `}
     render={data => (
-        <React.Fragment>
+      <React.Fragment>
         <HeaderSmall title={data.ghostPage.title} />
-        <Content data={data.ghostPage}/>
-        </React.Fragment>
+        <Content data={data.ghostPage} />
+      </React.Fragment>
     )}
   ></StaticQuery>
+)
 
-  
-);
-
-export default BieresContentContainer;
+export default BieresContentContainer

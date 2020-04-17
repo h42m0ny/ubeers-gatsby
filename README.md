@@ -12,13 +12,13 @@ Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CE
 
 ## Etape 2-7
 
-L'objectif de cette étape est de créer deux nouvelles pages : 
+L'objectif de cette étape est de créer deux nouvelles pages :
 
 - `Brasseries` qui reprendra un listing des brasseries existantes à la manière des bières
 
-- `brewery` qui affichera des informations sur une brasserie à l'image de `beer`. On affichera aussi les bières présente dans cette brasserie en faisant des liens vers celles-ci. 
+- `brewery` qui affichera des informations sur une brasserie à l'image de `beer`. On affichera aussi les bières présente dans cette brasserie en faisant des liens vers celles-ci.
 
-Voici une capture d'écran de la page `Brasseries` : 
+Voici une capture d'écran de la page `Brasseries` :
 
 ![Image](/static/images/breweries-list.png)
 
@@ -26,7 +26,6 @@ Voici une capture d'écran de la page `brewery` :
 
 ![Image](/static/images/brewery.png)
 
-
-## Et après ? 
+## Et après ?
 
 Vous pouvez aller en step-2-8.
