@@ -12,6 +12,11 @@ exports.createPages = async ({ graphql, actions }) => {
           nodes {
             slug
           }
+        },
+        allStrapiBreweries {
+          nodes {
+            slug
+          }
         }
       }
     `)
@@ -37,6 +42,17 @@ exports.createPages = async ({ graphql, actions }) => {
           },
         })
     })
+
+    result.data.allStrapiBreweries.nodes.forEach(({ slug }) => {
+      const { createPage } = actions
+      createPage({
+        path: "/brasseries/"+slug,
+        component: path.resolve(`./src/templates/brewery.js`),
+        context: {
+          slug: slug,
+        },
+      })
+  })
 
       
 }

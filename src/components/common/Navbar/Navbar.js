@@ -21,6 +21,7 @@ const NAV_ITEMS = [
   {name:'Équipe',link:'/equipe',slug:'team'},
   {name:'Caves',link:'/caves',slug:'cellars'},
   {name:'Bieres',link:'/bieres',slug:'beers'},
+  {name:'Brasseries',link:'/brasseries',slug:'breweries'},
   {name:'Articles',link:'/articles',slug:'articles'},
   {name:'FAQ',link:'/#'}]
 
