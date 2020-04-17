@@ -10,8 +10,6 @@
 
 Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CESI en Avril 2020.
 
-<<<<<<< HEAD
-
 ## Etape 2-3
 
 ## Etape 2-2
@@ -42,16 +40,26 @@ L'objectif de cette étape est de créer un nouveau template `beer` pour créer 
 
 ## Etape 2-6
 
+# L'objectif de cette étape est de continuer à modifier notre page `Bières` pour ajouter des filtres.
+
+## Etape 2-7
+
+L'objectif de cette étape est de créer deux nouvelles pages :
+
 > > > > > > > readme
 
-L'objectif de cette étape est de continuer à modifier notre page `Bières` pour ajouter des filtres.
+- `Brasseries` qui reprendra un listing des brasseries existantes à la manière des bières
 
-Après avoir ajouter les catégories, nous allons ajouter un champ de recherche qui filtrera la liste des bières.
+- `brewery` qui affichera des informations sur une brasserie à l'image de `beer`. On affichera aussi les bières présente dans cette brasserie en faisant des liens vers celles-ci.
 
-Voici une capture d'écran de la page bières :
+Voici une capture d'écran de la page `Brasseries` :
 
-![Image](/static/images/beers-search.png)
+![Image](/static/images/breweries-list.png)
+
+Voici une capture d'écran de la page `brewery` :
+
+![Image](/static/images/brewery.png)
 
 ## Et après ?
 
-Vous pouvez aller en step-2-7.
+Vous pouvez aller en step-2-8.
