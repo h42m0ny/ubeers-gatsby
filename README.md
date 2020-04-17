@@ -10,8 +10,6 @@
 
 Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CESI en Avril 2020.
 
-<<<<<<< HEAD
-
 ### Objectif
 
 ![Image](/static/images/demo.png)
@@ -38,7 +36,6 @@ Après avoir configuré la source, vous devriez voir dans votre GraphiQL, les do
 
 ## Etape 2-1
 
-<<<<<<< HEAD
 Amusez vous à faire des requêtes dessus pour prendre en main les données.
 
 ## Et après ?
@@ -65,52 +62,10 @@ Pour vous aider, n'hésitez pas à consulter la documentation de Gatsby.
 
 ## Etape 2-3
 
-<<<<<<< HEAD
-Il est temps d'aller plus loin en créant les pages de chaque article à la volée. Vous pouvez aller en step-1-4.
-
-Nous avons fini d'importer des données depuis Ghost. Nous allons passer à Strapi.Vous pouvez aller en step-2-1.
-
-Désormais nous allons construire la partie `bières` avec les données présent sur Strapi.
-
-Pour avoir des données plus cohérente, j'ai scrapé le site des [bières bretonnes](bieresbretonnes.fr/) avec Puppeteer.
-
-# Dans un premier temps, il faut retoucher aux modèles. Voici les modèles et leurs relations :
-
-## Etape 2-1
-
-Désormais nous allons construire la partie `bières` avec les données présent sur Strapi.
-
-Pour avoir des données plus cohérente, j'ai scrapé le site des [bières bretonnes](bieresbretonnes.fr/) avec Puppeteer.
-
-Dans un premier temps, il faut retoucher aux modèles. Voici les modèles et leurs relations :
-
-![Image](/static/images/categories.png)
-![Image](/static/images/brew.png)
-![Image](/static/images/beers.png)
-![Image](/static/images/relation_beers_brew.png)
-![Image](/static/images/relation_beers_cat.png)
-
-Ensuite, il faut charger les données. Vous retrouverez les données en JSON dans le dossier `static/data/ubeers.json`.
-
-Vous avez également un dump Mongo présent dans `/data/dump/`. Faites attention, j'ai du changé le nom de la base en local en `bzh-beers` et changé le paramètre dans `database.json` dans Strapi.
-
-A noter que dans la partie `static/images/`, vous retrouverez aussi l'ensemble des images des bières et logos des brasseries.
-
-## Et après ?
-
-# Vous pouvez aller en step-2-2.
-
-A noter que dans la partie `static/images/`, vous retrouverez aussi l'ensemble des images des bières et logos des brasseries.
-
-## Et après ?
-
-=======
-
 ## Etape 2-2
 
 Il faut relier les données de strapi à gatsby. Pour ce faire, il existe un plugin source "gatsby-source-strapi" qui faut installer de la même manière que pour celui de Ghost, à savoir dans le `gatsby-config.js`.
 
-<<<<<<< HEAD
 Vous devriez avoir cela pour la recherche de la brasserie "Lancelot" :
 
 ![Image](/static/images/lancelot.png)
@@ -121,10 +76,20 @@ Vous pouvez aller en step-2-3.
 =======
 Désormais que nous avons les données de bières, nous allons pouvoir commencer à modifier notre page `bières` afin de lister les bières présentes dans notre strapi.
 
-Il faut donc modifer les components et la page pour arriver à cette capture d'écran :
+# Il faut donc modifer les components et la page pour arriver à cette capture d'écran :
 
-![Image](/static/images/beers-gatsby-list.png)
+## Etape 2-4
+
+L'objectif de cette étape est de créer un nouveau template `beer` pour créer des pages sur chacune des bières.
+
+À la manière de la page pour chaque article, il faut modifier le `gatsby-node` pour effectuer cette opération.
+
+Par la suite, il faudra modifer notre page des bières pour mettre les liens.
+
+Voici une capture d'écran de la fiche d'une bière :
+
+![Image](/static/images/beer-fiche.png)
 
 ## Et après ?
 
-Vous pouvez aller en step-2-4.
+Vous pouvez aller en step-2-5.
