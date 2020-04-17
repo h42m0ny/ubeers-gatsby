@@ -13,7 +13,10 @@ const Content = (props) => (
                 </div>
             )
         }
-         <div dangerouslySetInnerHTML={{__html: props.data.html}}/>            
+         <div dangerouslySetInnerHTML={{__html: props.data.html}}/> 
+         {props.children && 
+            (props.children)
+         }           
         </Container>
       </Section>
 );

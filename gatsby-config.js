@@ -42,6 +42,12 @@ module.exports = {
                         // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
       }
    },
+   {
+    resolve: `gatsby-plugin-styled-components`,
+    options: {
+      // Add any options here
+    },
+  },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
