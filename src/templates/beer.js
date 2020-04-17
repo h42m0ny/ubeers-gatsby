@@ -27,7 +27,7 @@ export default ({data}) => {
                                                   
                     </div>
                     <div>
-                        <img src={'/images/'+beer.image} width={500}/>
+                        <img alt={beer.name} src={'/images/'+beer.image} width={500}/>
                     </div>
                 </Grid>
             </Container>
