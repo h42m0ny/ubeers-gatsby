@@ -2,6 +2,7 @@ deploy:
   image: node:12.16.1
 
   script:
+    - git fetch --prune
     - npm install -g clever-tools
     - clever login --token CLEVER_TOKEN --secret CLEVER_SECRET
     - clever link app_a23540e1-a005-409a-9c57-d0feb6fcc5b4 --alias ubeers-gatsby
