@@ -1,7 +1,10 @@
 image: node:12.16.1
+
 stages:
   - clever
+
 clever:
+  stage: clever
   environment:
     name: production
   only:
