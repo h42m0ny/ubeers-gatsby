@@ -1,5 +1,7 @@
-clever:
-  image: node:12.16.1
+image: node:12.16.1
+
+stages:
+  - 🚀deploy
 
   environment:
     name: production
@@ -11,4 +13,4 @@ clever:
     - npm install -g clever-tools
     - clever login --token CLEVER_TOKEN --secret CLEVER_SECRET
     - clever link app_a23540e1-a005-409a-9c57-d0feb6fcc5b4 --alias ubeers-gatsby
-    - clever deploy --branch deploy
+    - clever deploy
