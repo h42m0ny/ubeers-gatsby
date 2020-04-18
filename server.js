@@ -1,6 +1,7 @@
 const express = require("express")
 const gatsbyExpress = require("gatsby-plugin-express")
 const app = express()
+const { exec } = require("child_process")
 
 app.get("/webhook/ghost", function(req, res) {
   exec("npm --v", function(error, stdout, stderr) {
