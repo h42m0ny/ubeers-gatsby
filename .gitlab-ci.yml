@@ -1,10 +1,10 @@
 image: node:12.16.1
 
 stages:
-  - clever
+  - deployment
 
-clever:
-  stage: clever
+clever-cloud:
+  stage: deployment
   environment:
     name: production
   only:
