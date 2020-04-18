@@ -22,6 +22,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      # This action requires an unshallow working copy,
+      # so the following prerequisites are necessary:
+      - run: git fetch --prune --unshallow
+
       # Install and deploy app
       - run: npm install -g clever-tools
       - run: clever login --token ${{ secrets.CLEVER_TOKEN }} --secret ${{ secrets.CLEVER_SECRET }}
