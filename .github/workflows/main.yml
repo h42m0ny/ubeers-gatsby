@@ -26,7 +26,7 @@ jobs:
       - run: npm install -g clever-tools
       - run: clever login --token ${{ secrets.CLEVER_TOKEN }} --secret ${{ secrets.CLEVER_SECRET }}
       - run: clever link app_a23540e1-a005-409a-9c57-d0feb6fcc5b4 --alias ubeers-gatsby
-      - run: clever deploy --branch deploy
+      - run: clever deploy --branch deploy --force
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
