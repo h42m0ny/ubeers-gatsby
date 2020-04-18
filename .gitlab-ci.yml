@@ -1,7 +1,5 @@
-image: node:12.16.1
-
-stages:
-  - 🚀deploy
+clever:
+  image: node:12.16.1
 
   environment:
     name: production
