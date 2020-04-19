@@ -10,6 +10,12 @@ clever-cloud:
   only:
     - deploy
   script:
+    - git config --global user.email "cois.tony@gmail.com"
+    - git config --global user.name "Tony Cois"
+    - npm install
+    - npm run build
+    - git add --force ./public/
+    - git commit -m 'gatsby build prepare to deploy'
     - npm install -g clever-tools
     - clever login --token CLEVER_TOKEN --secret CLEVER_SECRET
     - clever link app_a23540e1-a005-409a-9c57-d0feb6fcc5b4 --alias ubeers-gatsby
