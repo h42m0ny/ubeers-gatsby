@@ -22,9 +22,9 @@ app.get("/webhook/ghost", function(req, res) {
   child.stdout.on("data", function(data) {
     console.log("", data.toString())
   })
- /* child.on("exit", function(exitCode) {
+  child.on("exit", function(exitCode) {
     console.log("Child exited with code: " + exitCode)
-  })*/
+  })
 
   res.send("GET request to the homepage")
 })

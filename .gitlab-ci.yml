@@ -10,6 +10,7 @@ clever-cloud:
   only:
     - deploy
   script:
+    - git fetch --all
     - git config --global user.email "cois.tony@gmail.com"
     - git config --global user.name "Tony Cois"
     - npm install
