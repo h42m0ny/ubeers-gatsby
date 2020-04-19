@@ -27,7 +27,7 @@ jobs:
       - run: git fetch --prune --unshallow
 
       - run: npm install
-      - run: ./node_modules/bin/gatsby build
+      - run: npm run build
       - run: git add --force ./public/
       - run: git commit -m 'gatsby build prepare to deploy'
       - run: ls ./public/

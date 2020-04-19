@@ -1,10 +1,10 @@
 const express = require("express")
 const gatsbyExpress = require("gatsby-plugin-express")
 const app = express()
-const { spawn } = require("child_process")
-const CLEVER_TOKEN = process.env.CLEVER_TOKEN || ""
-const CLEVER_SECRET = process.env.CLEVER_SECRET || ""
-
+//const { spawn } = require("child_process")
+//const CLEVER_TOKEN = process.env.CLEVER_TOKEN || ""
+//const CLEVER_SECRET = process.env.CLEVER_SECRET || ""
+/*
 app.get("/webhook/ghost", function(req, res) {
   var child = spawn(
     "./node_modules/clever-tools/bin/clever.js login --token " +
@@ -28,7 +28,7 @@ app.get("/webhook/ghost", function(req, res) {
 
   res.send("GET request to the homepage")
 })
-
+*/
 // serve static files before gatsbyExpress
 app.use(express.static("public/"))
 app.use(
