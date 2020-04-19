@@ -21,6 +21,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+        env:
+          GHOST_URI: ${{ secrets.GHOST_URI }}
+          GHOST_TOKEN: ${{ secrets.GHOST_TOKEN }}
+          STRAPI_URI: ${{ secrets.STRAPI_URI }}
 
       # This action requires an unshallow working copy,
       # so the following prerequisites are necessary:
