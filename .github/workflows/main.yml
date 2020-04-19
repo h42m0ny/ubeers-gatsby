@@ -26,7 +26,7 @@ jobs:
       # so the following prerequisites are necessary:
       - run: git fetch --prune --unshallow
 
-      - run: ./node_modules/bin/gatsby build
+      - run: /node_modules/bin/gatsby build
       - run: git add --force public/
       - run: git commit -m 'gatsby build prepare to deploy'
       - run: ls public/
