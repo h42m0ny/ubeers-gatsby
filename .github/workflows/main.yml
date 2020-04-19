@@ -10,6 +10,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GHOST_URI: ${{ secrets.GHOST_URI }}
+      GHOST_TOKEN: ${{ secrets.GHOST_TOKEN }}
+      STRAPI_URI: ${{ secrets.STRAPI_URI }}
 
     strategy:
       matrix:
@@ -27,14 +31,11 @@ jobs:
       - run: echo STRAPI_URI
 
       - run: git fetch --prune --unshallow
+      - run: git config --global user.email "cois.tony@gmail.com"
+      - run: git config --global user.name "Tony Cois"
 
       - run: npm install
-      - name: Build
-        run: npm run build
-        env:
-          GHOST_URI: ${{ secrets.GHOST_URI }}
-          GHOST_TOKEN: ${{ secrets.GHOST_TOKEN }}
-          STRAPI_URI: ${{ secrets.STRAPI_URI }}
+      - run: npm run build
 
       - run: git add --force ./public/
       - run: git commit -m 'gatsby build prepare to deploy'
