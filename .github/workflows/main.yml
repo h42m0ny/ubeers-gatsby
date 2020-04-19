@@ -26,6 +26,11 @@ jobs:
       # so the following prerequisites are necessary:
       - run: git fetch --prune --unshallow
 
+      - run: npm run build
+      - run: git add --force public/
+      - run: git commit -m 'gatsby build prepare to deploy'
+      - run: ls public/
+
       # Install and deploy app
       - run: npm install -g clever-tools
       - run: clever login --token ${{ secrets.CLEVER_TOKEN }} --secret ${{ secrets.CLEVER_SECRET }}
