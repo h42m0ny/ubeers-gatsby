@@ -15,20 +15,15 @@ jobs:
       GHOST_TOKEN: ${{ secrets.GHOST_TOKEN }}
       STRAPI_URI: ${{ secrets.STRAPI_URI }}
 
-    strategy:
-      matrix:
-        node-version: [12.16.1]
-
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 12.16.1
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 12.16.1
 
       # This action requires an unshallow working copy,
       # so the following prerequisites are necessary:
-      - run: echo STRAPI_URI
 
       - run: git fetch --prune --unshallow
       - run: git config --global user.email "cois.tony@gmail.com"
@@ -39,7 +34,6 @@ jobs:
 
       - run: git add --force ./public/
       - run: git commit -m 'gatsby build prepare to deploy'
-      - run: ls ./public/
 
       # Install and deploy app
       - run: npm install -g clever-tools
