@@ -43,7 +43,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "postinstall": "NODE_ENV=production npm run build",
     "express": "node server.js",
     "start": "node server.js",
     "serve": "gatsby serve",

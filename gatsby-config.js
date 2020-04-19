@@ -1,6 +1,15 @@
-const GHOST_URI = process.env.GHOST_URI || "http://localhost:2369"
-const GHOST_TOKEN = process.env.GHOST_TOKEN || "2842c8bf95bfce733b0777f981"
-const STRAPI_URI = process.env.STRAPI_URI || "http://localhost:1337"
+const GHOST_URI =
+  process.env.GHOST_URI ||
+  process.env.secrets.GHOST_URI ||
+  "http://localhost:2369"
+const GHOST_TOKEN =
+  process.env.GHOST_TOKEN ||
+  process.env.secrets.GHOST_TOKEN ||
+  "2842c8bf95bfce733b0777f981"
+const STRAPI_URI =
+  process.env.STRAPI_URI ||
+  process.env.secrets.STRAPI_URI ||
+  "http://localhost:1337"
 
 const path = require("path")
 
