@@ -25,6 +25,7 @@ jobs:
       # This action requires an unshallow working copy,
       # so the following prerequisites are necessary:
 
+      - run: git fetch --prune --unshallow
       - run: git config --global user.email "cois.tony@gmail.com"
       - run: git config --global user.name "Tony Cois"
 
