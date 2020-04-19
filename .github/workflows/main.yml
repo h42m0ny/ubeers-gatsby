@@ -21,17 +21,21 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+
+      # This action requires an unshallow working copy,
+      # so the following prerequisites are necessary:
+      - run: echo STRAPI_URI
+
+      - run: git fetch --prune --unshallow
+
+      - run: npm install
+      - name: Build
+        run: npm run build
         env:
           GHOST_URI: ${{ secrets.GHOST_URI }}
           GHOST_TOKEN: ${{ secrets.GHOST_TOKEN }}
           STRAPI_URI: ${{ secrets.STRAPI_URI }}
 
-      # This action requires an unshallow working copy,
-      # so the following prerequisites are necessary:
-      - run: git fetch --prune --unshallow
-
-      - run: npm install
-      - run: npm run build
       - run: git add --force ./public/
       - run: git commit -m 'gatsby build prepare to deploy'
       - run: ls ./public/
