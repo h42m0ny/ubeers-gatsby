@@ -71,4 +71,4 @@ jobs:
           npm install -g clever-tools
           clever login --token ${{ secrets.CLEVER_TOKEN }} --secret ${{ secrets.CLEVER_SECRET }}
           clever link ${{ secrets.CLEVER_APP_ID }} --alias ubeers-strapi
-          clever deploy --branch deploy
+          clever deploy --branch deploy --force
