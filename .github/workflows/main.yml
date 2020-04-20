@@ -4,7 +4,7 @@ name: Deploy
 # Sur un événement "push" sur la branche production
 on:
   push:
-    branches: [deploy]
+    branches: [production]
 
 # Création de notre job deploy
 jobs:
@@ -61,9 +61,7 @@ jobs:
 
       # Récupération de l'ensemble des commits du repository. Par défaut, le clone ne récupére pas un historique profond. Or pour Clever Cloud, c'est indispensable
       - name: Run git commands
-        run: |
-          ls ./public/
-          git fetch --prune --unshallow
+        run: git fetch --prune --unshallow
 
       # Installation de clever-tools and deploy app
       - name: Instal and Deploy to Clever
@@ -71,4 +69,4 @@ jobs:
           npm install -g clever-tools
           clever login --token ${{ secrets.CLEVER_TOKEN }} --secret ${{ secrets.CLEVER_SECRET }}
           clever link ${{ secrets.CLEVER_APP_ID }} --alias ubeers-strapi
-          clever deploy --branch deploy --force
+          clever deploy --branch production --force
