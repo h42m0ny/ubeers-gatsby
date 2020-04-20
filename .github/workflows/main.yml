@@ -62,6 +62,7 @@ jobs:
       # Récupération de l'ensemble des commits du repository. Par défaut, le clone ne récupére pas un historique profond. Or pour Clever Cloud, c'est indispensable
       - name: Run git commands
         run: |
+          ls ./public/
           git fetch --prune --unshallow
 
       # Installation de clever-tools and deploy app
