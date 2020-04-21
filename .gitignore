@@ -67,5 +67,8 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+<<<<<<< HEAD
 .idea
 .vscode
+=======
+>>>>>>> df89f5e0692b453637f0e8e83e7849b0894d9cda
