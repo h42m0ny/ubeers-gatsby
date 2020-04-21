@@ -3,9 +3,9 @@ import React from 'react';
 
 import Layout from '@common/Layout';
 import Navbar from '@common/Navbar';
-
+import HeaderSmall from '@sections/HeaderSmall';
 import Footer from '@sections/Footer';
-import BieresContentContainer from '../containers/BieresContent';
+import ContentBeers from '@sections/ContentBeers';
 
 const BeersPage = ({ data }) => (
   <Layout>
