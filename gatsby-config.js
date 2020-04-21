@@ -63,10 +63,20 @@ module.exports = {
       options: {
           apiUrl: `http://localhost:2368`,
           contentApiKey: `82c373e6104e0e85936b11c70a`,
-          version: `v3` // Ghost API version, optional, defaults to "v3".
-                        // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
-      }
-   }
+          version: `v3` // Ghost API version, optional, defaults to "v3".                       // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
+      },
+   },
+   {
+    resolve:`gatsby-source-strapi`,
+    options:{
+      apiUrl:`http://localhost:1337`,
+      contentTypes:[
+        'beers',
+        'breweries',
+        'categories'
+      ]
+    }
+  }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

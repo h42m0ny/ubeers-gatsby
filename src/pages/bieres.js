@@ -8,13 +8,41 @@ import Footer from '@sections/Footer';
 import ContentBeers from '../components/sections/ContentBeers';
 import HeaderSmall from '../components/sections/HeaderSmall';
 
-const BeersPage = () => (
+const BeersPage = ({data}) => (
   <Layout>
   <Navbar selected="beers" />
   <HeaderSmall title=" Découvrez des bières d'exceptions" />
-  <ContentBeers/>
+  {
+    data.allStrapiBeers.edges.map(
+      beerData => (
+        <ContentBeers data={beerData.node}/>
+      )
+    )
+  }
+ 
   <Footer />
 </Layout>
 );
 
+export const query = graphql`
+{
+  allStrapiBeers {
+    edges {
+      node {
+           id
+            name
+            image
+            description
+            slug
+            brewery {
+              name
+            }
+            category {
+              name
+            }
+      }
+    }
+  }
+}
+`
 export default BeersPage;

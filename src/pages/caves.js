@@ -14,7 +14,12 @@ const CellarsPage = ({data}) => (
   <Layout>
   <Navbar selected="cellars" />
   <HeaderSmall title="Les caves à bières, pourquoi ?" />
-  <ContentBrewerie data={data.allGhostPage.edges[0].node}/>
+  {
+    data.allGhostPage.edges.map(breweryData=>(
+      <ContentBrewerie data={breweryData.node}/>)
+    )
+  }
+  
   <Footer />
 </Layout>
 );
