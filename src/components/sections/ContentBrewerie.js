@@ -2,20 +2,18 @@ import React from 'react';
 
 import { Section, Container } from '@components/global';
 
-const ContentBeers = ({data}) => (
-  
+const ContentBrewerie = ({data}) => (
+      
       <Section content>
         <Container>
-        <h2>{data.name}</h2>
-        
-        <img src={data.image} alt={`${data.slug}`}/>
+         <img src={data.feature_image} alt={data.slug}/>
         <p>
-        {data.description}
+            {data.plaintext}
         </p>
-          
+                 
         </Container>
       </Section>
 );
 
 
-export default ContentBeers;
+export default ContentBrewerie;

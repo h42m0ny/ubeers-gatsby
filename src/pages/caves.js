@@ -6,15 +6,36 @@ import Navbar from '@common/Navbar';
 
 import Footer from '@sections/Footer';
 import HeaderSmall from '../components/sections/HeaderSmall';
-import Content from '../components/sections/Content';
+import ContentBrewerie from '../components/sections/ContentBrewerie';
+import {graphql} from "gatsby";
 
-const CellarsPage = () => (
+
+const CellarsPage = ({data}) => (
   <Layout>
   <Navbar selected="cellars" />
   <HeaderSmall title="Les caves à bières, pourquoi ?" />
-  <Content/>
+  {
+    data.allGhostPage.edges.map(breweryData=>(
+      <ContentBrewerie data={breweryData.node}/>)
+    )
+  }
+  
   <Footer />
 </Layout>
 );
-
+export const query = graphql`
+  {
+    allGhostPage(filter: {slug: {eq: "caves"}}) {
+      edges {
+        node {
+          id
+          slug
+          title
+          plaintext
+          feature_image
+        }
+      }
+    }
+  }
+`
 export default CellarsPage;
