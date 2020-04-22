@@ -16,4 +16,4 @@ Bravo ! Vous êtes à la fin du projet... enfin presque :)
 
 Maintenant, il faut déployer l'ensemble de la JAM.
 
-Pour cela rendez-vous sur le repository `ubeers-deploy`.
+Pour cela rendez-vous sur le repository [ubeers-deploy](https://github.com/TonyCois/ubeers-deploy).
