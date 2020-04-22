@@ -2,62 +2,63 @@ import React from "react"
 
 import { graphql } from "gatsby"
 
-import Layout from "@common/Layout"
-import Navbar from "@common/Navbar"
+import { graphql } from 'gatsby';
 
-import styled from "styled-components"
+import Layout from '@common/Layout';
+import Navbar from '@common/Navbar';
 
-import { Section, Container } from "@components/global"
+import styled from 'styled-components';
 
-import Footer from "@sections/Footer"
+import { Section, Container } from '@components/global';
 
-import { Link } from "gatsby"
-import HeaderSmall from "../components/sections/HeaderSmall"
-import _ from "lodash"
+import Footer from '@sections/Footer';
+
+import { Link } from 'gatsby';
+import HeaderSmall from '../components/sections/HeaderSmall';
+import _ from 'lodash'
 
 class BeersPage extends React.Component {
+
   constructor(props) {
     super(props)
     this.state = {
       beers: props.data.allStrapiBeers.nodes,
       categories: props.data.allStrapiCategories.nodes,
-      currentCategory: "Toutes",
-      page: props.data.ghostPage,
-    }
+      currentCategory: 'Toutes',
+      page: props.data.ghostPage
+    };
 
-    this.setBeerFromCategory = this.setBeerFromCategory.bind(this)
-    this.searchBeerFromInput = this.searchBeerFromInput.bind(this)
+    this.setBeerFromCategory = this.setBeerFromCategory.bind(this);
+    this.searchBeerFromInput = this.searchBeerFromInput.bind(this);
+
   }
 
   setBeerFromCategory(category) {
     if (category.name === undefined) {
       this.setState({
         beers: this.props.data.allStrapiBeers.nodes,
-        currentCategory: category,
+        currentCategory: category
       })
     } else {
       this.setState({
-        beers: _.filter(this.props.data.allStrapiBeers.nodes, {
-          category: { name: category.name },
-        }),
-        currentCategory: category.name,
+        beers: _.filter(this.props.data.allStrapiBeers.nodes, { category: { name: category.name } }),
+        currentCategory: category.name
       })
     }
   }
 
   searchBeerFromInput(value) {
+    console.log(value)
     if (value !== undefined && value.length >= 4) {
+
       this.setState({
-        beers: _.filter(
-          this.props.data.allStrapiBeers.nodes,
-          beer => beer.name.indexOf(value) !== -1
-        ),
-        currentCategory: "Toutes",
+        beers: _.filter(this.props.data.allStrapiBeers.nodes, (beer) => beer.name.indexOf(value) !== -1),
+        currentCategory: 'Toutes'
       })
     } else {
       this.setState({
         beers: this.props.data.allStrapiBeers.nodes,
-        currentCategory: "Toutes",
+        currentCategory: 'Toutes'
       })
     }
   }
@@ -72,66 +73,50 @@ class BeersPage extends React.Component {
             <div dangerouslySetInnerHTML={{ __html: this.state.page.html }} />
             <div>
               <LabelStyled>Recherche </LabelStyled>
-              <InputStyled
-                type="text"
-                onChange={e => this.searchBeerFromInput(e.target.value)}
-                placeholder={this.props.data.allStrapiBeers.nodes[0].name}
-              />
+              <InputStyled type="text" onChange={(e) => this.searchBeerFromInput(e.target.value)} placeholder={this.props.data.allStrapiBeers.nodes[0].name} />
             </div>
             <div>
               <ListStyled>
+                <LiStyled><p>Par type de bières</p></LiStyled>
                 <LiStyled>
-                  <p>Par type de bières</p>
+                  <FilterCategoryStyled active={this.state.currentCategory === 'Toutes' ? true : false} onClick={() => this.setBeerFromCategory("Toutes")}>Toutes</FilterCategoryStyled>
                 </LiStyled>
-                <LiStyled>
-                  <FilterCategoryStyled
-                    active={
-                      this.state.currentCategory === "Toutes" ? true : false
-                    }
-                    onClick={() => this.setBeerFromCategory("Toutes")}
-                  >
-                    Toutes
-                  </FilterCategoryStyled>
-                </LiStyled>
-                {this.state.categories.map(category => (
-                  <LiStyled key={category.id}>
-                    <FilterCategoryStyled
-                      active={
-                        this.state.currentCategory === category.name
-                          ? true
-                          : false
-                      }
-                      onClick={() => this.setBeerFromCategory(category)}
-                    >
-                      {category.name}
-                    </FilterCategoryStyled>
-                  </LiStyled>
-                ))}
+                {
+                  this.state.categories.map((category) => (
+                    <LiStyled key={category.id}>
+                      <FilterCategoryStyled
+                        active={this.state.currentCategory === category.name ? true : false}
+                        onClick={() => this.setBeerFromCategory(category)}>{category.name}
+                      </FilterCategoryStyled>
+                    </LiStyled>
+                  ))
+                }
               </ListStyled>
             </div>
 
             <Grid>
-              {this.state.beers.map(beer => (
-                <LinkStyled to={`/bieres/${beer.slug}`} key={beer.id}>
-                  <div>
-                    <img
-                      alt={beer.name}
-                      src={"/images/" + beer.image}
-                      width={200}
-                    />
-                    <p>{beer.name}</p>
-                    <p>{beer.category.name}</p>
-                  </div>
-                </LinkStyled>
-              ))}
+              {
+                this.state.beers.map((beer) => (
+                  <LinkStyled to={`/bieres/${beer.slug}`} key={beer.id}>
+                    <div>
+                      <img alt={beer.name} src={'/images/' + beer.image} width={200} />
+                      <p>{beer.name}</p>
+                      <p>{beer.category.name}</p>
+                    </div>
+                  </LinkStyled>
+                ))
+              }
             </Grid>
           </Container>
         </Section>
         <Footer />
       </Layout>
+
     )
   }
+
 }
+
 
 export const query = graphql`
   {
@@ -145,16 +130,16 @@ export const query = graphql`
           name
         }
       }
-    }
+    },
     allStrapiCategories {
       nodes {
         id
         name
         slug
-      }
-    }
+       }
+    },
 
-    ghostPage(slug: { eq: "bieres" }) {
+    ghostPage(slug: {eq: "bieres"}) {
       id
       title
       feature_image
@@ -163,30 +148,32 @@ export const query = graphql`
   }
 `
 const LinkStyled = styled(Link)`
-  text-decoration: none;
+    text-decoration:none;
 `
 const ListStyled = styled.ul`
   padding: 0;
 `
 
 const LabelStyled = styled.label`
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 20px;
-  color: #564f62;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: #564F62;
 `
 
 const InputStyled = styled.input`
   width: 300px;
   height: 40px;
   font-size: 24px;
-  color: #564f62;
+  color: #564F62;
 `
 
-const FilterCategoryStyled = styled.a`
-  background: ${props => (props.active ? "#564F62" : "#f3dc3b")};
-  color: ${props => (props.active ? "white" : "#564F62")};
 
+const FilterCategoryStyled = styled.a`
+
+  background: ${props => props.active ? "#564F62" : "#f3dc3b"};
+  color: ${props => props.active ? "white" : "#564F62"};
+  
   cursor: pointer;
   display: block;
   margin: 0 0 20px 5px;
@@ -201,6 +188,7 @@ const LiStyled = styled.li`
   margin-right: 40px;
 `
 
+
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -209,7 +197,7 @@ const Grid = styled.div`
   align-items: center;
   justify-items: center;
   margin: 24px 0;
-  float: left;
+  float:left;
 
   h2 {
     margin-bottom: 16px;
@@ -224,6 +212,5 @@ const Grid = styled.div`
       margin-bottom: 24px;
     }
   }
-`
-
-export default BeersPage
+`;
+export default BeersPage;
