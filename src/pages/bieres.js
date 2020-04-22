@@ -22,7 +22,6 @@ class BeersPage extends React.Component {
       beers: props.data.allStrapiBeers.nodes,
       categories: props.data.allStrapiCategories.nodes,
       currentCategory: "Toutes",
-      page: props.data.ghostPage,
     }
 
     this.setBeerFromCategory = this.setBeerFromCategory.bind(this)
@@ -66,10 +65,9 @@ class BeersPage extends React.Component {
     return (
       <Layout>
         <Navbar selected="beers" />
-        <HeaderSmall title={this.state.page.title} />
+        <HeaderSmall title={"Les bières"} />
         <Section>
           <Container>
-            <div dangerouslySetInnerHTML={{ __html: this.state.page.html }} />
             <div>
               <LabelStyled>Recherche </LabelStyled>
               <InputStyled
@@ -152,13 +150,6 @@ export const query = graphql`
         name
         slug
       }
-    }
-
-    ghostPage(slug: { eq: "bieres" }) {
-      id
-      title
-      feature_image
-      html
     }
   }
 `

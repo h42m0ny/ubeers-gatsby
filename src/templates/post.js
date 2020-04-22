@@ -5,26 +5,11 @@ import Navbar from "../components/common/Navbar"
 import HeaderSmall from "../components/sections/HeaderSmall"
 import Content from "../components/sections/Content"
 
-export default ({ data }) => {
+export default () => {
   return (
     <Layout>
       <Navbar selected="articles" />
-      <HeaderSmall title={data.ghostPost.title} />
-      <Content data={data.ghostPost} />
+      <HeaderSmall title={"articles"} />
     </Layout>
   )
 }
-
-export const query = graphql`
-  query($slug: String!) {
-    ghostPost(slug: { eq: $slug }) {
-      html
-      title
-      published_at
-      feature_image
-      primary_author {
-        name
-      }
-    }
-  }
-`
