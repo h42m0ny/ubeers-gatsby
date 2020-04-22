@@ -1,5 +1,5 @@
 const GHOST_URI = process.env.GHOST_URI || "http://localhost:2369"
-const GHOST_TOKEN = process.env.GHOST_TOKEN || "2842c8bf95bfce733b0777f981"
+const GHOST_TOKEN = process.env.GHOST_TOKEN || "82c373e6104e0e85936b11c70a"
 const STRAPI_URI = process.env.STRAPI_URI || "http://localhost:1337"
 
 const path = require("path")
@@ -32,11 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-<<<<<<< HEAD
         apiURL: STRAPI_URI,
-=======
-        apiURL: `http://localhost:1337`,
->>>>>>> master
         queryLimit: 10000, // Default to 100
         contentTypes: [`beers`, `breweries`, `categories`],
       },
@@ -44,19 +40,11 @@ module.exports = {
     {
       resolve: `gatsby-source-ghost`,
       options: {
-<<<<<<< HEAD
         apiUrl: GHOST_URI,
         contentApiKey: GHOST_TOKEN,
         version: `v3`, // Ghost API version, optional, defaults to "v3".
         // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
       },
-=======
-        apiUrl: `http://localhost:2368`,
-        contentApiKey: `2842c8bf95bfce733b0777f981`,
-        version: `v3` // Ghost API version, optional, defaults to "v3".
-        // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
-      }
->>>>>>> master
     },
     {
       resolve: `gatsby-plugin-styled-components`,
@@ -64,10 +52,7 @@ module.exports = {
         // Add any options here
       },
     },
-<<<<<<< HEAD
     `gatsby-plugin-remove-trailing-slashes`,
-=======
->>>>>>> master
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -107,25 +92,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-source-ghost`,
-      options: {
-        apiUrl: `http://localhost:2368`,
-        contentApiKey: `82c373e6104e0e85936b11c70a`,
-        version: `v3` // Ghost API version, optional, defaults to "v3".                       // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
-      },
-    },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiUrl: `http://localhost:1337`,
-        contentTypes: [
-          'beers',
-          'breweries',
-          'categories'
-        ]
-      }
-    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
