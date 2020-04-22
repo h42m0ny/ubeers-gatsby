@@ -212,27 +212,4 @@ const Grid = styled.div`
     }
   }
 `;
-
-
-export const query = graphql`
-{
-  allStrapiBeers {
-    edges {
-      node {
-           id
-            name
-            image
-            description
-            slug
-            brewery {
-              name
-            }
-            category {
-              name
-            }
-      }
-    }
-  }
-}
-`
 export default BeersPage;
