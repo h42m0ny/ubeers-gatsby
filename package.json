@@ -46,7 +46,7 @@
     "start": "node server.js",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "postinstall": "gatsby build",
+    "postinstall": "NODE_ENV=production npm run build",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
