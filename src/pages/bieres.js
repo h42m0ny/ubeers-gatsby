@@ -1,18 +1,10 @@
 import React from "react"
-
 import { graphql } from "gatsby"
-
-import { graphql } from 'gatsby';
-
 import Layout from '@common/Layout';
 import Navbar from '@common/Navbar';
-
 import styled from 'styled-components';
-
 import { Section, Container } from '@components/global';
-
 import Footer from '@sections/Footer';
-
 import { Link } from 'gatsby';
 import HeaderSmall from '../components/sections/HeaderSmall';
 import _ from 'lodash'
