@@ -16,30 +16,11 @@ const ArticlesPage = data => (
     <HeaderSmall title="Les actualités de la bière" />
     <Container>
       <Section content>
-        {data.data.allGhostPost.nodes.map(post => (
-          <ArticleItem key={post.id} post={post} />
-        ))}
+        <p>Articles</p>
       </Section>
     </Container>
     <Footer />
   </Layout>
 )
-
-export const query = graphql`
-  {
-    allGhostPost {
-      nodes {
-        id
-        excerpt
-        published_at
-        title
-        slug
-        primary_author {
-          name
-        }
-      }
-    }
-  }
-`
 
 export default ArticlesPage

@@ -16,11 +16,6 @@ Ce projet est développé dans le cadre d'un cours sur la JAM Stack donné à CE
 
 Il faut relier les données de strapi à gatsby. Pour ce faire, il existe un plugin source "gatsby-source-strapi" qui faut installer de la même manière que pour celui de Ghost, à savoir dans le `gatsby-config.js`.
 
-Vous devriez avoir cela pour la recherche de la brasserie "Lancelot" :
-
-![Image](/static/images/lancelot.png)
-ep-2-2.
-=======
 Vous pouvez aller en step-2-3.
 =======
 =======
@@ -61,3 +56,5 @@ Voici une capture d'écran de la page `brewery` :
 ## Et après ?
 
 Vous pouvez aller en step-2-8.
+=======
+Pour cela rendez-vous sur le repository [ubeers-deploy](https://github.com/TonyCois/ubeers-deploy).

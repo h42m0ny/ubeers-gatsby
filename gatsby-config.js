@@ -38,15 +38,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-ghost`,
-      options: {
-        apiUrl: GHOST_URI,
-        contentApiKey: GHOST_TOKEN,
-        version: `v3`, // Ghost API version, optional, defaults to "v3".
-        // Pass in "v2" if your Ghost install is not on 3.0 yet!!!
-      },
-    },
-    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
