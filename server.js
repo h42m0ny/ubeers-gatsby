@@ -1,3 +1,4 @@
+const express = require("express");
 const gatsbyExpress = require('gatsby-plugin-express');
 const app = express();
 
